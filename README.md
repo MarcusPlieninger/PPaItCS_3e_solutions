@@ -39,8 +39,8 @@ Legend:
 - :speech_balloon: = Discussion questions
 - :computer: = Programming exercises
 - :construction: = In progress
-- :pencil2: = Corrected
 - :heavy_check_mark: = Done
+- :pencil2: = Corrected
 - :date: = Date completed
 - :hourglass: = Daily time spent
 - :heavy_plus_sign: = Total time spent
