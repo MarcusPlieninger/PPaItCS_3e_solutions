@@ -16,8 +16,8 @@ The purpose of this project is to learn a popular programming language (i.e., Py
 
 This book has 13 chapters, with exercises at the end of each chapter.
 
-|:book:||:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:|:date:|:hourglass:|:heavy_plus_sign:|
-|------|-----|------------|---------|------|---------|----------------|---------|----------|---------|------|-----------|----------------|
+|:book:||:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:| |:date:|:hourglass:|:heavy_plus_sign:|
+|------|-----|------------|---------|------|---------|----------------|---------|----------|---------|-|------|-----------|----------------|
 | 1|Computers and Programs|:heavy_check_mark:|
 | 2|Writing Simple Programs|:construction:|
 | 3|Computing with Numbers|:construction:|
