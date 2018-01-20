@@ -20,24 +20,25 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |:book:||:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:|:date:|:hourglass:|:heavy_plus_sign:|
 |------|-----|------------|---------|------|---------|----------------|---------|----------|---------|------|-----------|----------------|
 | 1|Computers and Programs|:heavy_check_mark:|
-| 2|Writing Simple Programs|
-| 3|Computing with Numbers|
-| 4|Objets and Graphics|
-| 5|Sequences: Strings, Lists, and Files|
-| 6|Defining Functions|
-| 7|Decision Structures|
-| 8|Loop Structures and Booleans|
-| 9|Simulation and Design|
-|10|Defining Classes|
-|11|Data Collections|
-|12|Object-Oriented Design|
-|13|Algorithm Design and Recursion|
+| 2|Writing Simple Programs|:construction:|
+| 3|Computing with Numbers|:construction:|
+| 4|Objets and Graphics|:construction:|
+| 5|Sequences: Strings, Lists, and Files|:construction:|
+| 6|Defining Functions|:construction:|
+| 7|Decision Structures|:construction:|
+| 8|Loop Structures and Booleans|:construction:|
+| 9|Simulation and Design|:construction:|
+|10|Defining Classes|:construction:|
+|11|Data Collections|:construction:|
+|12|Object-Oriented Design|:construction:|
+|13|Algorithm Design and Recursion|:construction:|
 
 Legend: 
 - :keycap_ten: = True/false Questions
 - :abcd: = Multiple choice questions
 - :speech_balloon: = discussion questions
 - :computer: = Programming exercises
+- :construction: = In progress
 - :pencil2: = Corrected
 - :date: = Date completed
 - :hourglass: = Daily time spent
