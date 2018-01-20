@@ -1,39 +1,61 @@
-# Chapter 1 Exercises
-# "Python Programming: An Introduction to Computer Science, Third Edition" by John Zelle
+#### "Python Programming: An Introduction to Computer Science, Third Edition" by John Zelle
+#### Chapter 1: Computers and Programs
+#### End-of-Chapter Exercises
 
-# Review Questions, pp. 21-2
+### REVIEW QUESTIONS
+
+## True/False
 
 #  1. Computer science is the study of computers. FALSE
+
 #  2. The CPU is the "brain" of the computer. TRUE
+
 #  3. Secondary memory is also called RAM. FALSE
+
 #  4. All information that a computer is currently working on is stored in the main memory. TRUE
+
 #  5. The syntax of a language is its meaning, the semantics is its form. FALSE
+
 #  6. A function definition is a sequence of statements that defines a new command. TRUE
+
 #  7. A programming environment refers to a place where programmers work. FALSE
+
 #  8. A variable is used to give a name to a value so it can be referred to in other places. TRUE
+
 #  9. A loop is used to skip over a section of a program. FALSE
+
 # 10. A chaotic function can't be computed by a computer. FALSE
-#
-# Multiple Choice, pp. 22-3
+
+
+## Multiple Choice
 
 #  1. What is the fundamental question of computer science? b) What can be computed?
+
 #  2. An algorithm is like a d) recipe
+
 #  3. A problem is intractable when d) it is not practical to solve
+
 #  4. Which of the following is not an example of secondary memory a) RAM
+
 #  5. Computer languages designed to be used and understood by humans are b) high-level computer languages
+
 #  6. A statement is b) a complete computer command
+
 #  7. One difference between a compiler and an interpreter is c) a compiler is no longer needed after a program is translated
+
 #  8. By convention, the statements of a program are often placed in a function called b) main
+
 #  9. Which of the following is not true of comments? a) They make a program more efficient
+
 # 10. The items listed in the parentheses of a function are called d) both b) parameters and c) arguments are correct*
 #     *Note: I have a feeling that parameter refers more accurately to a *function definition* where as *argument* is used
 #     to refer to the value that is passed to the function when it is called, so that the argument replaces all instances
 #     of the parameter in the definition.
 
-# Discussion, pp. 23-4
+## Discussion
 
 
-# Programming Exercises, pp. 24-5
+### PROGRAMMING EXERCISES
 
 # 1. Start up an interactive Python session and try typing in each of the following commands. Write down the results you see there.
 #    a) print("Hello, world!")   | Expected result: 'Hello, world!' | Actual result:
