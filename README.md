@@ -17,9 +17,9 @@ The purpose of this project is to learn a popular programming language (i.e., Py
 
 This book has 13 chapters, with exercises at the end of each chapter.
 
-|:book:|Title|T/F|c|MC|c|D|c|:calendar:|:hourglass:|:heavy_plus_sign:|
-|----|-----|---|-|--|-|-|-|--------------|----------------|----------------|
-| 1|Computers and Programs|
+|:book:||:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:|:date:|:hourglass:|:heavy_plus_sign:|
+|------|-----|------------|---------|------|---------|----------------|---------|----------|---------|------|-----------|----------------|
+| 1|Computers and Programs|:heavy_check_mark:|
 | 2|Writing Simple Programs|
 | 3|Computing with Numbers|
 | 4|Objets and Graphics|
@@ -33,7 +33,15 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |12|Object-Oriented Design|
 |13|Algorithm Design and Recursion|
 
-Legend: T/F=True/False, MC=Multiple Choice, D=Discussion, c=Corrected
+Legend: 
+- :keycap_ten: = True/false Questions
+- :abcd: = Multiple choice questions
+- :speech_balloon: = discussion questions
+- :computer: = Programming exercises
+- :pencil2: = Corrected
+- :date: = Date completed
+- :hourglass: = Daily time spent
+- :heavy_plus_sign: = Total time spent
 
 ## Solutions 
 
