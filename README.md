@@ -15,10 +15,10 @@ The purpose of this project is to learn a popular programming language (i.e., Py
 
 ## Table of Contents and Exercises
 
-This book has 13 chapter, with exercises at the end of each chapter.
+This book has 13 chapters, with exercises at the end of each chapter.
 
-|Ch. |Title|Date Completed|Corrected (Y/N)|Daily Time Spent|Total Time Spent|
-|----|-----|--------------|---------|----------------|----------------|
+|:book:|Title|T/F|c|MC|c|D|c|:calendar:|:hourglass:|:heavy_plus_sign:|
+|----|-----|---|-|--|-|-|-|--------------|----------------|----------------|
 | 1|Computers and Programs|
 | 2|Writing Simple Programs|
 | 3|Computing with Numbers|
@@ -28,11 +28,12 @@ This book has 13 chapter, with exercises at the end of each chapter.
 | 7|Decision Structures|
 | 8|Loop Structures and Booleans|
 | 9|Simulation and Design|
-|10|Defiing Classes|
+|10|Defining Classes|
 |11|Data Collections|
 |12|Object-Oriented Design|
 |13|Algorithm Design and Recursion|
 
+Legend: T/F=True/False, MC=Multiple Choice, D=Discussion, c=Corrected
 
 ## Solutions 
 
