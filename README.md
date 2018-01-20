@@ -40,6 +40,7 @@ Legend:
 - :computer: = Programming exercises
 - :construction: = In progress
 - :pencil2: = Corrected
+- :heavy_check_mark: = Done
 - :date: = Date completed
 - :hourglass: = Daily time spent
 - :heavy_plus_sign: = Total time spent
