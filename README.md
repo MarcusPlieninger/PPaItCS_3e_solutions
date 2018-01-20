@@ -1,5 +1,4 @@
 # PPaItCS_3e_solutions
-Solutions to exercises in "Python Programming: An Introduction to Computer Science, Third Edition" by John Zelle
 
 This project contains solutions to the exercises found in the textbook, [*Python Programming: An Introduction to Computer Science, Third Edition*](https://fbeedle.com/our-books/23-python-programming-an-introduction-to-computer-science-3rd-ed-9781590282755.html), which I have purchased from [Amazon](https://www.amazon.com/Python-Programming-Introduction-Computer-Science/dp/1590282752/ref=sr_1_2?ie=UTF8&qid=1516294885&sr=8-2&keywords=python+programming+third+edition).
 
