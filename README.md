@@ -34,9 +34,10 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |13|Algorithm Design and Recursion|:construction:|
 
 Legend: 
+- :book: = Chapter
 - :keycap_ten: = True/false Questions
 - :abcd: = Multiple choice questions
-- :speech_balloon: = discussion questions
+- :speech_balloon: = Discussion questions
 - :computer: = Programming exercises
 - :construction: = In progress
 - :pencil2: = Corrected
