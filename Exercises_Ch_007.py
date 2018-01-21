@@ -31,8 +31,39 @@
 
 ## Multiple Choice
 
-#  1.
+#  1. A statement that controls the execution of other statements is called a
+#     a) boss structure     b) super structure
+#     c) control sructure   d) branch
 
+#  2. The best structure for implementing a multi-way decision in Python is
+#     a) if     b) if-else     c) if-elif-else     d) try
+
+#  3. An expression that evalutes to either true or false is called [D]
+#     a) operational     b) Booelan     c) simple     d) compound
+
+#  4. When a program is being run directly (not imported), the value of __name__ is
+#     a) script     b) main     c) __main__     d) True
+
+#  5. The literals for type bool are
+#     a) T, F     b) True, False     c) true, false     d) 1, 0
+
+#  6. Placing a decision inside of another decision is an example of [C]
+#     a) cloning     b) spooning     c) nesting     d) procrastination
+
+#  7. In Python, the body of a decision is indicated by
+#     a) indentation     b) parentheses     c) curly braces     d) a colon
+
+#  8. A structure in which one decision leads to another set of decisions, which leads to another
+#     set of decisions, etc. is called a decision [C]
+#     a) network     b) web     c) tree     d) trap
+
+#  9. Taking the square root of a negative value with math.sqrt produces a(n)
+#     a) ValueError     b) imaginary number
+#     c) program crash  d) stomachache
+
+# 10. A multiple choice question is most similar to
+#     a) simple decision     b) two-way decision
+#     c) multi-way decisions d) an excpetion handler 
 
 ## Discussion
 
