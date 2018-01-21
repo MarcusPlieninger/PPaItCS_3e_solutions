@@ -54,6 +54,27 @@
 
 ## Discussion
 
+#  1. Compare and contrast the following pairs of concepts from the chapter:
+#     a) Hardware vs. Software
+#     b) Algorithm vs. Program
+#     c) Programming Lnaguage vs. Natural Language
+#     d) High-Level Language vs. Machine Language
+#     e) Interpreter vs. Compiler
+#     f) Syntax vs. Symantics
+
+#  2. List and explain in your own words the role of each of the five basic functional units of a computer depicted in Figure 1.1.
+
+#  3. Write a detailed algorithm for making a peanut butter and jelly sandwich (or some other everyday activity). You should assume
+#     that you are talking to someone who is conceptually able to do the task, but has never actually done it before. For example,
+#     you might be telling a young child.
+
+#  4. As you will learn in a later chapter, many of the numbers stored in a computer are not exact values, but rather close
+#     approximations. For example, the value 0.1 might be sotred as 0.10000000000000000555. Usually, such small differences are not
+#     a problem; however, given what you have learned about chaotic behavior in Chapter 1, you should realize the need for caution in
+#     certain situations. Can you think of exmaples where this might be a problem? Explain.
+
+#  5. Trace through the chaos program from Section 1.6 by hand using 0.15 as the input value. Show the sequence of output that results.
+
 
 ### PROGRAMMING EXERCISES
 
@@ -85,23 +106,51 @@
      # File: chaos.py
      #A simple program illustrating chaotic behavior.
      def main():
-     print("Ths program illustrates a chaotic function")
-     x = eval(input("Enter a number between 0 and 1: "))
-     for i in range (20):
-         x = 3.9 * x * (1 - x)
-         print(x)
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         for i in range (20):
+             x = 3.9 * x * (1 - x)
+             print(x)
         
 # 5. Modfiy the chaos program so taht the number of values to print is determined by the user. You wil have to add a line near the top of the
 #    program to get another value from the user:
 #    n = eval(input("How many numbers should I print? "))
 #    Then you will need to change the loop to use n instead of a specific number.
-
+     def main():
+         print("This program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         n = eval(input("How many numbers should I print? "))
+         for i in range (n):
+             x = 3.9 * x * (1 - x)
+             print(x)
+         
 # 6. The calculation performed in the chaos program can be written in a number of ways that are algebraically equivalent. Write a version of
 #    the program for each of the following ways of doing the computation. Have your modified programs print out 100 iterations of the calculation
 #    and compare the results when run on the same input.
 #    a) 3.9 * x * (1 - x)
+     def main():
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         for i in range (100):
+             x = 3.9 * x * (1 - x)
+             print(x)
+
 #    b) 3.9 * x (x - x * x)
+     def main():
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         for i in range (100):
+             x = 3.9 * x(X - X * x)
+             print(x)
+             
 #    c) 3.9 * x - 3.9 * x * x
+     def main():
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         for i in range (100):
+             x = 3.9 * x - 3.9 * X * X
+             print(x)
+
 #    Explain the results of this experiment. Hint: See discussion question number 4, above.
 
 # 7. (Advanced) Modify the chaos program so that it accepts two inputs and then prints a table with two columns similar to the one shown in Section
