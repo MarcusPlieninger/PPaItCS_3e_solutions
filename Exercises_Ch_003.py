@@ -30,7 +30,7 @@
 #  5. The sqrt function computes the squirt of a number. FALSE
 #     [Explanation: The sqrt function computes the square root of a number.]
 
-#  6. The float data type is identical to the mathematical concept of a real number. ?
+#  6. The float data type is identical to the mathematical concept of a real number. ??
 
 #  7. Computers represent numbers using base-2 (binary) representations. TRUE
 #     [Explanation: p.72-3 "Computer memory is composed of electrical 'switches,' each of which can be
@@ -38,7 +38,7 @@
 #     of information. One bit can encode two possibilities, usually represented with the numberals 0 (for off)
 #     and 1 (for on)."
 
-#  8. A hardware float can represent a larger range of values than a hardware int. ?
+#  8. A hardware float can represent a larger range of values than a hardware int. ??
 
 #  9. Type conversion functions such as float are a safe alternative to eval for getting a number
 #     as user input. TRUE
