@@ -78,9 +78,42 @@
 #  2. Give a truth table that shows the Boolean value of each of the following Boolean expressions, for every possible
 #     of "input" values. Hint: Including columns for intermediate expressions is helpful.
 #     a) not (P and Q)
+#
+#     P | Q | P and Q | not (P and Q) |
+#     ---------------------------------
+#     T | T |    T    |       F       |
+#     T | F |    F    |       T       |
+#     F | T |    F    |       T       |
+#     F | F |    F    |       T       |
+
 #     b) (not P) and Q
+#
+#     P | Q |  not P  | (not P) and Q |
+#     ---------------------------------
+#     T | T |    F    |       F       |
+#     T | F |    F    |       F       |
+#     F | T |    T    |       T       |
+#     F | F |    T    |       F       |
+
 #     c) (not P) or (not Q)
-#     d) (P and Q) or R
+#
+#     P | Q |  not P  |     not Q     |  (not P) or (not Q) |
+#     -------------------------------------------------------
+#     T | T |    F    |       F       |          F
+#     T | F |    F    |       T       |          T
+#     F | T |    T    |       F       |          T
+#     F | F |    T    |       T       |          T
+
+#     d) (P and Q) or R ?
+
+#     P | Q | (P and Q) | R |
+#     -------------------------------------------------------
+#     T | T |     T     | F
+#     T | F |     F     | T
+#     F | T |     F     |
+#     F | F |     F     |
+#     
+
 #     e) (P or Q) and (Q or R)
 
 #  3. Write a while loop fragment that calculates the following values:
