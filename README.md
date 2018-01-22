@@ -16,12 +16,12 @@ The purpose of this project is to learn a popular programming language (i.e., Py
 
 This book has 13 chapters, with exercises at the end of each chapter.
 
-|:book:||:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:| |:date:|:hourglass:|:heavy_plus_sign:|
-|------|-----|------------|---------|------|---------|----------------|---------|----------|---------|-|------|-----------|----------------|
-| 1|Computers and Programs|:heavy_check_mark:|
+|:closed_book:||:book:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
+|-------------|------|------------|---------|------|---------|----------------|---------|----------|----------|-|---|------|-----------|-|
+| 1|Computers and Programs|:construction:|:construction:||:construction:||:construction:||:construction:|
 | 2|Writing Simple Programs|:construction:|
 | 3|Computing with Numbers|:construction:|
-| 4|Objets and Graphics|:construction:|
+| 4|Objects and Graphics|:construction:|
 | 5|Sequences: Strings, Lists, and Files|:construction:|
 | 6|Defining Functions|:construction:|
 | 7|Decision Structures|:construction:|
@@ -33,7 +33,8 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |13|Algorithm Design and Recursion|:construction:|
 
 Legend: 
-- :book: = Chapter
+- :closed_book: = Chapter
+- :book: = Read
 - :keycap_ten: = True/false Questions
 - :abcd: = Multiple choice questions
 - :speech_balloon: = Discussion questions
