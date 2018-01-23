@@ -40,12 +40,21 @@
 #  7. A word of length n has n! anagrams. TRUE
 #     [Explanation: p. 472 "The number of anagrams of a word is the factorial of the length of the word."]
 
-#  8. Loops are more general than recursion. FALSE
-#     [Explanation: p.474 "...recursive functions are a generalization of loops." 
+#  8. Loops are more general than recursion. FALSE [Note: still don't understand this]
+#     [Explanation: p.474 "In fact, recursive functions are a generalization of loops. Anything that can be
+#     with a loop can be done by a simple kind of recursive function."] 
 
-#  9. Merge sort is an example of n log n algorithm. ?
+#  9. Merge sort is an example of n log n algorithm.
+#     [Explanation: p.483 "Therefore, the total work required to sort n items is n log 2 n [Note: 2 is subscript].
+#     Computer scientists call this an n log n algorithm."]
 
 # 10. Exponential algorithms are generally considered intractable. TRUE
+#     [Explanation: p.489 "Computer scientists call this an exponential time algorithm, since the measure of
+#     the size of the problem, n, appears in the exponent of this formula. Exponential algorithms blow up
+#     very quickly and can only be practically solved for relatively small sizes, even on the fastest
+#     computers....Even though the algorithm for Tower of Hanoi is easy to express, it belongs to a class
+#     known as intractable problems. These are problems that require too much computing power (either time
+#     or memory) to be solved in practice, except for the simplest cases."]
 
 
 ## Multiple Choice
