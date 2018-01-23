@@ -1,5 +1,7 @@
 # Chapter 8 Exercises
-# "Python Programming: An Introduction to Computer Science, Third Edition" by John Zelle
+##### "Python Programming: An Introduction to Computer Science, Third Edition" by John Zelle
+##### Chapter 8: Loop Structures and Booleans
+##### End-of-Chapter Exercises
 
 ### REVIEW QUESTIONS
 
@@ -7,8 +9,13 @@
 ## True/False
 
 #  1. A Python while implements a definite loop. FALSE
+#     [Explanation: p.245 "An indefinite [or conditional] loop keeps iterating until certain
+#     conditions are met. There is no guarantee ahead of time regarding how many times the loop
+#     will go around. In Python, an indefinite loop is implemented using a while statement."
+#     p. 245: "...the for loop (in its usual form) is a definite loop, and that means the number
+#     of iterations is determined when the loop starts."]
 
-#  2. The counted loop patter uses a definite loop. TRUE
+#  2. The counted loop pattern uses a definite loop. TRUE
 
 #  3. A sentinel loop asks the user whether to continue on each iteration. FALSE
 
@@ -16,7 +23,7 @@
 
 #  5. The easiest way to iterate through the lines of a file in Python is to use a while loop. ?
 
-#  6. A while is a post-test loop. ?
+#  6. A while is a post-test loop. FALSE
 
 #  7. The Boolean operator or returns True when both of its operands are true. TRUE
 
@@ -25,7 +32,6 @@
 #  9. not(a or b) == (not a) or not(b) TRUE
 
 # 10. True or False TRUE
-
 
 ## Multiple Choice
 
@@ -65,7 +71,6 @@
 
 # 10. The term for an operator that may not evaluate one of its subexpressions is [?]
 #     a) short-circuit b) faulty c) exclusive d) indefinite
-
 
 ## Discusion
 
