@@ -30,7 +30,10 @@
 #  5. The sqrt function computes the squirt of a number. FALSE
 #     [Explanation: The sqrt function computes the square root of a number.]
 
-#  6. The float data type is identical to the mathematical concept of a real number. ??
+#  6. The float data type is identical to the mathematical concept of a real number. FALSE
+#     [Explanation: Floats are approximations of real numbers. See p.59: "Another difference between ints
+#     and floats is that the float type can only represent approximations to real numbers." This has to
+#     do with how floats are stored. See p.74 for explanation. Be able to explain this in-depth and simply.]
 
 #  7. Computers represent numbers using base-2 (binary) representations. TRUE
 #     [Explanation: p.72-3 "Computer memory is composed of electrical 'switches,' each of which can be
@@ -38,7 +41,9 @@
 #     of information. One bit can encode two possibilities, usually represented with the numberals 0 (for off)
 #     and 1 (for on)."
 
-#  8. A hardware float can represent a larger range of values than a hardware int. ??
+#  8. A hardware float can represent a larger range of values than a hardware int. TRUE
+#     [Explanation: p.74 "Using a float allows us to represent a much larger range of values than a 32-bit
+#     int, but the amoutn of precision is still fixed."]
 
 #  9. Type conversion functions such as float are a safe alternative to eval for getting a number
 #     as user input. TRUE
@@ -47,7 +52,8 @@
 #     an erro message, thus avoiding the risk of a code injection attack...."]
 
 # 10. In Python, 4+5 produces the same result type as 4.0+5.0. FALSE
-
+#     [Explanation: p.60 "Python chooses the appropriate underlyng operation (int or float) based on the
+#     operands."]
 
 ## Multiple Choice
 

@@ -8,24 +8,59 @@
 ## True/False
 
 #  1. Computer science is the study of computers. FALSE
+#     [Explanation: p.3 "...computer science is not the study of computers. A famous scientist named Edsger
+#     Dijkstra once quipped that computers are to computer science what telescopes are to astronomy. The
+#     computer is an important tool in cmoputer science, but it is not itself the object of study. Since a
+#     computer can carry out any prcess that we can describe, the real question is 'What processes can we
+#     describe?' To put it another way, the fundamental question of computer science is simply 'What can be
+#     computed?' Computer scientists use numerous techniques of investigation to answer this question. The
+#     three main ones are design, analysis, and experimentation.
 
 #  2. The CPU is the "brain" of the computer. TRUE
+#     [Explanation: p.5 "The central processing unit (CPU) is the 'brain' of the machine. This is where all
+#     the basic operations of the computer are carried out."]
 
 #  3. Secondary memory is also called RAM. FALSE
+#     [Explanation: p.6 "The CPU can directly access only information that is stored in the main memory
+#     (called RAM for Random Access Memory)."..."In a modern personal computer, the principal secondary
+#     memory is typically an internal disk drive (HDD) or a solid state drive (SSD)."]
 
 #  4. All information that a computer is currently working on is stored in the main memory. TRUE
+#     [Explanation: The memory stores programs and data. The CPU can directly access any information that is
+#     stored in main memory (called RAM for Random Acess Memory). Main memory is fast, but it is also volatile.
+#     That is, when the power is turned off, the information in the memory is lost. Thus, there must be some
+#     secondary memory that provides more permanent storage.]
 
 #  5. The syntax of a language is its meaning, the semantics is its form. FALSE
+#     [Explanation: p.7 "Every structure in a programming language has a precise form (its syntax) and a
+#     precise meaning (its semantics)."]
 
 #  6. A function definition is a sequence of statements that defines a new command. TRUE
+#     [Explanation: p. 11 "Usually we want to move beyond one-line snippets and execute an entire sequence of
+#     statements. Python lets us put a sequence together to create a brand-new command or function. The first
+#     line tells Python that we are defining a new function and we are naming it hello."]
 
 #  7. A programming environment refers to a place where programmers work. FALSE
+#     [Expalantion: p.13 "A special type of application known as an Integrated Development Environment (IDE)
+#     simplifies the process. An IDE is specifically designed to help programmers write programs and includes
+#     features such as automatic identing, color highlighting, and interactive development. IDLE is a good
+#     example. So far we have just been using IDLE as a Python shell, but it is actually a simple but
+#     complete development environment."]
 
 #  8. A variable is used to give a name to a value so it can be referred to in other places. TRUE
+#     [Explanation: p. 16 "A variable is used to give a name to a value so that we can refer to it at other
+#     points in the program."]
 
 #  9. A loop is used to skip over a section of a program. FALSE
+#     [Explanation: p.17 "A loop is a device that tells Python to do the same thing over and over again."]
 
-# 10. A chaotic function can't be computed by a computer. FALSE
+# 10. A chaotic function can't be computed by a computer. TRUE and FALSE [need to think about this one some more]
+#     [Eplanation on the basis of our chaos program: "These two features of our chaos program, apparent
+#     unpredictability and extreme sensitivity to initial values, are the hallmarks of chaotic behavior. Chaos
+#     has important implications for computer science. It turns out that mnay phenomena in the real world that
+#     we might like to model and predict with our computers exhibit just this kind of chaotic behavior."
+#     [Note: The appearance of randomness or unpredictability are not the same thing as randomness and
+#     unpredictability. Because of the defined nature of computation, a function can only approximate chaos.]
 
 ## Multiple Choice
 
