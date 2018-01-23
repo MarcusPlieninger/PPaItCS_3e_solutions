@@ -51,12 +51,88 @@
 
 ## Multiple Choice
 
-#  1.
+#  1. Which of these is not a built-in Python data type? [C]
+#     a) int     b) float     c) rational     d) string
 
+#  2. Which of the following is not a built-in operation? [D]
+#     a) +     b) %     c) abs()     d) sqrt()
+
+#  3. In order to use functions in the math library, a program must include [D]
+#     a) a comment     b) a loop     c) an operator     d) an import statement
+
+#  4. The value of 4! is [B]
+#     a) 9     b) 24     c) 41     d) 129
+
+#  5. The most appropriate data type for storing the value of pi is [B]
+#     a) int     b) float     c) irrational     d) string
+
+#  6. The number of distinct values that can be represented using 5 bits is [C]
+#     a) 5     b) 10     c) 32     d) 50
+
+#  7. In a mixed-type expression involving ints and floats, Python will convert [C]
+#     a) floats to ints                    b) ints to strings
+#     b) both floats and intos to strings  c) ints to floats
+
+#  8. Which of the following is not a Python type-conversion function? [B]
+#     a) float     b) round     c) int     d) abs
+
+#  9. The pattern used to compute factorials is [A]
+#     a) accumulator         b) input, process, output
+#     c) breaks the computer d) uses more memory
+
+# 10. In modern Python, an int value that grows larger than the underlying hardware int [C]
+#     a) causes an overflow     b) converts to float
+#     c) breaks the computer    d) uses more memory
 
 ## Discussion
 
 #  1.
 
+#  2.
+
+#  3.
+
+#  4.
+
+#  5.
+
+#  6.
+
 
 ### PROGRAMMING EXERCISES
+
+#  1.
+
+#  2.
+
+#  3.
+
+#  4.
+
+#  5.
+
+#  6.
+
+#  7.
+
+#  8.
+
+#  9.
+
+# 10.
+
+# 11.
+
+# 12.
+
+# 13.
+
+# 14.
+
+# 15.
+
+# 16.
+
+# 17.
+
+
