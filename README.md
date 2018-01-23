@@ -26,10 +26,10 @@ This book has 13 chapters, with exercises at the end of each chapter.
 | 6|Defining Functions|:construction:|:heavy_check_mark:
 | 7|Decision Structures|:construction:|:heavy_check_mark:||:construction:
 | 8|Loop Structures and Booleans|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:
-| 9|Simulation and Design|:construction:|:construction:
+| 9|Simulation and Design|:construction:|:heavy_check_mark:
 |10|Defining Classes|:construction:|:construction:
 |11|Data Collections|:construction:|:construction:
-|12|Object-Oriented Design|:construction:|:construction:
+|12|Object-Oriented Design|:construction:|:heavy_check_mark:
 |13|Algorithm Design and Recursion|:construction:|:heavy_check_mark:||:construction:||:construction:||
 
 Legend: 
