@@ -19,18 +19,18 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |:closed_book:||:book:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
 |-------------|------|------------|---------|------|---------|----------------|---------|----------|----------|-|---|------|-----------|-|
 | 1|Computers and Programs|:construction:|:construction:||:construction:||:construction:||:construction:|
-| 2|Writing Simple Programs|:construction:|
-| 3|Computing with Numbers|:construction:|
-| 4|Objects and Graphics|:construction:|
-| 5|Sequences: Strings, Lists, and Files|:construction:|
-| 6|Defining Functions|:construction:|
-| 7|Decision Structures|:construction:|
-| 8|Loop Structures and Booleans|:construction:|
-| 9|Simulation and Design|:construction:|
-|10|Defining Classes|:construction:|
-|11|Data Collections|:construction:|
-|12|Object-Oriented Design|:construction:|
-|13|Algorithm Design and Recursion|:construction:|
+| 2|Writing Simple Programs|:construction:|:construction:||:construction:||:construction:|
+| 3|Computing with Numbers|:construction:|:construction:
+| 4|Objects and Graphics|:construction:|:construction:
+| 5|Sequences: Strings, Lists, and Files|:construction:|:heavy_check_mark:||:construction:||:construction:
+| 6|Defining Functions|:construction:|:construction:
+| 7|Decision Structures|:construction:|:construction:||:construction:
+| 8|Loop Structures and Booleans|:construction:|:construction:||:construction:||:construction:||:construction:
+| 9|Simulation and Design|:construction:|:construction:
+|10|Defining Classes|:construction:|:construction:
+|11|Data Collections|:construction:|:construction:
+|12|Object-Oriented Design|:construction:|:construction:
+|13|Algorithm Design and Recursion|:construction:|:heavy_check_mark:||:construction:||:construction:||
 
 Legend: 
 - :closed_book: = Chapter
