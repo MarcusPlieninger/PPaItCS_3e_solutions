@@ -3,6 +3,7 @@
 ##### Chapter 8: Loop Structures and Booleans
 ##### End-of-Chapter Exercises
 
+
 ### REVIEW QUESTIONS
 
 
@@ -16,22 +17,59 @@
 #     of iterations is determined when the loop starts."]
 
 #  2. The counted loop pattern uses a definite loop. TRUE
+#     [Explanation: p.45 (Ch.2, Section 2.6): "[the counted loop pattern]...is a very common way to
+#     to use definite loops. When you want to do something in your program a certain number of times
+#     use a for loop with a suitable range."]
 
 #  3. A sentinel loop asks the user whether to continue on each iteration. FALSE
+#     [Explanation: See question 4 below for explanation of sentinel loop. p.247-8: "One good use
+#     of the indefinite loop is to write interactive loops. The idea behind an interactive loop is
+#     that it allows the user to repeat certain portions of a program on demand."]
 
 #  4. A sentinel loop should not actually process the sentinel value. TRUE
+#     [Explanation: p.249: A sentinel loop continues to process data until reaching a special value
+#     that signals the end. The special value is called the sentinel. Any value may be chosen for
+#     for the sentinel. The only restriction is that it be distinguishable from actual data values.
+#     The sentinel is not processed as part of the daa."]
 
 #  5. The easiest way to iterate through the lines of a file in Python is to use a while loop. ?
 
-#  6. A while is a post-test loop. FALSE
+#  6. A while is a post-test loop. FALSE [not sure]
+#     [Explanation: p.263: "Unlike some other languages, Python does not have a statement that directly
+#     implements a post-test loop." p.245: "In Python, an indefinite loop is implemented using a while
+#     statement."]
 
 #  7. The Boolean operator or returns True when both of its operands are true. TRUE
+#     [Explanation: p.261: See truth table. Or returns true when either of its operands are true,
+#     as well.]
 
-#  8. a and (b or c) == (a and b) or (a and c) FALSE
+#  8. a and (b or c) == (a and b) or (a and c) TRUE
+#     [Note: I am assuming that parentheses are not needed to enclose each statement.
+#     Explanation: p.260 "Both and and or distribute over each other. See truth table below.]
+#     a  b  c  (b or c)   (a and (b or c)   (a and b)   (a and c)   ((a and b) or (a and c))
+#     T  T  T      T              T              T           T                  T
+#     F  T  T      T              F              F           F                  F
+#     T  F  T      T              T              F           T                  T
+#     T  T  F      T              T              T           F                  T
+#     F  F  T      T              F              F           F                  F
+#     T  F  F      F              F              F           F                  F
+#     F  T  F      T              F              F           F                  F
+#     F  F  F      F              F              F           F                  F
+    
 
-#  9. not(a or b) == (not a) or not(b) TRUE
+#  9. not(a or b) == (not a) or not(b) FALSE
+#     [Note: I am assuming there is no differnece between (not a) and not(a).
+#     Explanation: See truth table below. p.261: This identity dceptively alters DeMorgan's Laws.
+#     It would be true if the disjunctive in the first statement would be replaced by the conjunctive.]
+#     a     b     a or b     not(a or b)     (not a)     not(b)     (not a) or not(b)
+#     T     T       T             F             F          F                F
+#     T     F       T             F             F          T                T
+#     F     T       T             F             T          F                T
+#     F     F       F             T             T          T                T                       
 
 # 10. True or False TRUE
+#     [Explanation: p.257: "The or of two expressions is true when either expression is true."
+#     Accoridng to boolean algebra, this statement evaluates to true.]
 
 ## Multiple Choice
 
