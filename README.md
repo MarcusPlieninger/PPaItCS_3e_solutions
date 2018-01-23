@@ -23,9 +23,9 @@ This book has 13 chapters, with exercises at the end of each chapter.
 | 3|Computing with Numbers|:construction:|:heavy_check_mark:|
 | 4|Objects and Graphics|:construction:|:construction:
 | 5|Sequences: Strings, Lists, and Files|:construction:|:heavy_check_mark:||:construction:||:construction:
-| 6|Defining Functions|:construction:|:construction:
-| 7|Decision Structures|:construction:|:construction:||:construction:
-| 8|Loop Structures and Booleans|:construction:|:construction:||:construction:||:construction:||:construction:
+| 6|Defining Functions|:construction:|:heavy_check_mark:
+| 7|Decision Structures|:construction:|:heavy_check_mark:||:construction:
+| 8|Loop Structures and Booleans|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:
 | 9|Simulation and Design|:construction:|:construction:
 |10|Defining Classes|:construction:|:construction:
 |11|Data Collections|:construction:|:construction:
