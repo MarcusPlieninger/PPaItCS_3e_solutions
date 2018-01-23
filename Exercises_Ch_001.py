@@ -2,6 +2,7 @@
 #### Chapter 1: Computers and Programs
 #### End-of-Chapter Exercises
 
+
 ### REVIEW QUESTIONS
 
 ## True/False
@@ -26,28 +27,67 @@
 
 # 10. A chaotic function can't be computed by a computer. FALSE
 
-
 ## Multiple Choice
 
-#  1. What is the fundamental question of computer science? b) What can be computed?
+#  1. What is the fundamental question of computer science? [B]
+#     a) How fast can a computer compute?
+#     b) What can be computed?
+#     c) What is the most effective programming language?
+#     d) How much money can a programmer make?
 
-#  2. An algorithm is like a d) recipe
+#  2. An algorithm is like a [D]
+#     a) newspaper
+#     b) venus flytrap
+#     c) drum
+#     d) recipe
 
-#  3. A problem is intractable when d) it is not practical to solve
+#  3. A problem is intractable when [D]
+#     a) you cannot reverse its solution
+#     b) it involves tractors
+#     c) it has many solutions
+#     d) it is not practical to solve
 
-#  4. Which of the following is not an example of secondary memory a) RAM
+#  4. Which of the following is not an example of secondary memory [A]
+#     a) RAM
+#     b) hard drive
+#     c) USB flash drive
+#     d) DVD
 
-#  5. Computer languages designed to be used and understood by humans are b) high-level computer languages
+#  5. Computer languages designed to be used and understood by humans are [B]
+#     a) natural languages
+#     b) high-level computer languages
+#     c) machine languages
+#     d) fetch-execute languages
 
-#  6. A statement is b) a complete computer command
+#  6. A statement is [B]
+#     a) a translation of machine language
+#     b) a complete computer command
+#     c) a precise description of a problem
+#     d) fetch-execute languages
 
-#  7. One difference between a compiler and an interpreter is c) a compiler is no longer needed after a program is translated
+#  7. One difference between a compiler and an interpreter is [C]
+#     a) a compiler is a program
+#     b) a compiler is used to translate high-level language into machine language
+#     c) a compiler is no longer needed after a program is translated
+#     d) a compiler processes source code
 
-#  8. By convention, the statements of a program are often placed in a function called b) main
+#  8. By convention, the statements of a program are often placed in a function called [B]
+#     a) import
+#     b) main
+#     c) program
+#     d) IDLE
 
-#  9. Which of the following is not true of comments? a) They make a program more efficient
+#  9. Which of the following is not true of comments? [A]
+#     a) They make a program more efficient.
+#     b) They are intended for human readers.
+#     c) They are ignored by Python.
+#     d) In Python, they begin with a pound sign (#).
 
-# 10. The items listed in the parentheses of a function are called d) both b) parameters and c) arguments are correct*
+# 10. The items listed in the parentheses of a function are called [D]
+#     a) parentheticals
+#     b) parameters
+#     c) arguments
+#     d) both b) parameters and c) arguments are correct*
 #     *Note: I have a feeling that parameter refers more accurately to a *function definition* where as *argument* is used
 #     to refer to the value that is passed to the function when it is called, so that the argument replaces all instances
 #     of the parameter in the definition.
@@ -79,18 +119,19 @@
 ### PROGRAMMING EXERCISES
 
 # 1. Start up an interactive Python session and try typing in each of the following commands. Write down the results you see there.
-#    a) print("Hello, world!")   | Expected result: 'Hello, world!' | Actual result:
-#    b) print("Hello", "world!") | Expected result: 'Hello' 'world!'| Actual result:
-#    c) print(3)                 | Expected result: 3               | Actual result:
-#    d) print(3,0)               | Expected result: '3,0'           | Actual result:
-#    e) print(2 + 3)             | Expected result: 5               | Actual result:
-#    f) print(2.0 + 3.0)         | Expected result: 5.0             | Actual result:
-#    g) print("2" + "3")         | Expected result: 23              | Actual result:
-#    h) print("2 + 3 =", 2 + 3)  | Expected result: 2 + 3 = 5       | Actual result:
-#    i) print(2 * 3)             | Expected result: 6               | Actual result:
-#    j) print(2 ** 3)            | Expected result: 8               | Actual result:
-#    k) print(7 / 3)             | Expected result: 2.3333333333335 | Actual result:
-#    l) print(7 // 3)            | Expected result: 2               | Actual result:
+#                                  Expected        | Actual
+#    a) print("Hello, world!")     'Hello, world!' | 
+#    b) print("Hello", "world!")   'Hello' 'world!'|
+#    c) print(3)                   3               | 
+#    d) print(3,0)                 '3,0'           | 
+#    e) print(2 + 3)               5               | 
+#    f) print(2.0 + 3.0)           5.0             | 
+#    g) print("2" + "3")           23              | 
+#    h) print("2 + 3 =", 2 + 3)    2 + 3 = 5       | 
+#    i) print(2 * 3)               6               | 
+#    j) print(2 ** 3)              8               | 
+#    k) print(7 / 3)               2.3333333333335 | 
+#    l) print(7 // 3)              2               | 
 
 # 2. Enter and run the chaos program from Section 1.6. Try it out with various values of input to see that it functions as described
 #    in the chapter.
@@ -156,6 +197,17 @@
 # 7. (Advanced) Modify the chaos program so that it accepts two inputs and then prints a table with two columns similar to the one shown in Section
 #    1.8. (Note: You will probably not be able to get the columns to line up as nicely as those in the example. Chapter 5 discusses how to print
 #    numbers with a fixed number of decimal places).
+
+     def main():
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         y = eval(input("Enter a second number betweeon 0 and 1: "))
+         print(input     x     y /n --------------------)
+         for i in range (100):
+             x = 3.9 * x * (1 - x)
+             y = 3.9 * x * (1 - x)
+             print(x     y)
+
 
 
 
