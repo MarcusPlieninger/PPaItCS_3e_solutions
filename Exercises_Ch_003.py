@@ -59,36 +59,62 @@
 
 #  1. Which of these is not a built-in Python data type? [C]
 #     a) int     b) float     c) rational     d) string
+#     [Explanation: 
 
 #  2. Which of the following is not a built-in operation? [D]
 #     a) +     b) %     c) abs()     d) sqrt()
+#     [Explnaation: sqrt() "lives" in the math library. See p.
 
 #  3. In order to use functions in the math library, a program must include [D]
 #     a) a comment     b) a loop     c) an operator     d) an import statement
+#     [Explanation
 
 #  4. The value of 4! is [B]
 #     a) 9     b) 24     c) 41     d) 129
+#     [Explanation: 4 * 3 * 2 * 1 = 24
 
 #  5. The most appropriate data type for storing the value of pi is [B]
 #     a) int     b) float     c) irrational     d) string
+#     [Explanation:
 
 #  6. The number of distinct values that can be represented using 5 bits is [C]
 #     a) 5     b) 10     c) 32     d) 50
+#     [Explanation: p.73: "In general, n bits can represent 2^n different values."]
 
 #  7. In a mixed-type expression involving ints and floats, Python will convert [C]
 #     a) floats to ints                    b) ints to strings
 #     b) both floats and intos to strings  c) ints to floats
+#     [Explanation: p.62-3: "In general, converating a float to an int is a dangerous step, because
+#     some information (the fractional part) will be lost. On the other hand, an int can be safely
+#     tunred into a float just by adding a fractional part of .0. So in mixed-type expressions, Python
+#     will automatically convert ints to floats and perform floating-point operations to produce
+#     a float result."]
 
 #  8. Which of the following is not a Python type-conversion function? [B]
 #     a) float     b) round     c) int     d) abs
+#     [Explanation: p.60: abs is a built-in numberic operator that returns the absolute value. This is not
+#     type-conversion. p.75: "Programs may explicitly convert one data type into another using the functions
+#     float(), int(), and round()."]
 
 #  9. The pattern used to compute factorials is [A]
 #     a) accumulator         b) input, process, output
 #     c) breaks the computer d) uses more memory
+#     [Explanation: p.69: "Now let's try to think to think about the algorithm [to take a factorial of a number]
+#     more generally. What is actually goin on here? We are doing repeated multipliations, and as we go along,
+#     we keep track of the running product. This is a very common algorithmic pattern called an accumulator. We
+#     build up, or accumulate, a final value piece by pice. To accomplish this in a program, we will use an
+#     accumulator variable and a loop structure."]
 
-# 10. In modern Python, an int value that grows larger than the underlying hardware int [C]
+# 10. In modern Python, an int value that grows larger than the underlying hardware int [D]
 #     a) causes an overflow     b) converts to float
 #     c) breaks the computer    d) uses more memory
+#     [Explanation: p.74-5: A Python int is not a fixed size, but expands to accomodate whatever value it holds. The
+#     only limit is the amount of memory the computer has available to it. When the value is small, Python can just use
+#     the computer's underlying int representation and operations. When the value gets larger, Python automatically converts
+#     to a represetnation using more bits. Of course, in order to perform operations on larger numbers, Python has to break
+#     down the operations into smaller units that the computer hardware is able to handle--similar to the way you might do
+#     long division by hand. These operations will not be as efficient (they requrie more steps), but they allow our Python
+#     ints to grow to arbitrary size."]
 
 ## Discussion
 

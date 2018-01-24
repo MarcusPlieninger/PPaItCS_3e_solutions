@@ -54,7 +54,30 @@
 
 ## Multiple Choice
 
-#  1.
+#  1. A method that returns the value of an ojbect's instance variable is called a(n) [D]
+#     a) mutator     b) function     c) constructor     d) accessor
+
+#  2. A method that changes the state of an object is called a(n) [B]
+#     a) stator     b) mutator     c) constructor     d) changor
+
+#  3. What graphics class would be best for drawing a square?
+#     a) Square     b) Polygon     c) Line     d) Rectangle
+
+#  4. What command would set the coordiantes of win to go from (0,0) in the lower-left corner to (10,10) in the
+#     upper-right?
+
+#  5. What expression would create a line from (2,3) to (4,5)?
+
+#  6. What command would be sued to draw the graphics object shape into the graphics window win?
+
+#  7. Which of the following computes the horizontal distance between points p1 and p2?
+
+#  8. What kind of ojbect can be used to get text input in a graphics window?
+
+#  9. A user interface organized around visual elements and user actions is called a(n)
+
+# 10. What color is color_rgb(0,255,255)?
+
 
 
 ## Discussion

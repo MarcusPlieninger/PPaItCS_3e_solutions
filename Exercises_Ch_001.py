@@ -69,30 +69,48 @@
 #     b) What can be computed?
 #     c) What is the most effective programming language?
 #     d) How much money can a programmer make?
+#     [Explanation: pp.3-4: "A famous computer scientist named Edsger Dikjstra once quipped that computers are to
+#     computer science what telescopes are to astronomy. The computer is an important tool in computer science, but
+#     it is not itself the object of study. Since a computer can carry out any process that we can describe, the real
+#     question is, 'What processes can we describe?' To put it another way, the fundamental question of computer
+#     science is simply, 'What can be computed?' Computer scientists use numerous techniques of investigation to
+#     answer this question. The three main ones are design, analysis, and experimentation."
 
 #  2. An algorithm is like a [D]
 #     a) newspaper
 #     b) venus flytrap
 #     c) drum
 #     d) recipe
+#     [Explanation: p.4: "One way to demonstrate that a particular problem can be solved is to actually design a solution.
+#     That is, we develop a step-by-step process for achieving the desired result. Computer scientists call this an
+#     algorithm. That's a fancy word that basically means 'recipe.' The design of algorithms is one of the most important
+#     facets of computer science. In this book you will find techniques for designing and implementing algorithms."
 
 #  3. A problem is intractable when [D]
 #     a) you cannot reverse its solution
 #     b) it involves tractors
 #     c) it has many solutions
 #     d) it is not practical to solve
+#     [Explanation: p.4: "Analysis is the process of examining algorithms and problems mathematically. Computer scientists
+#     have shown that some seemingly simple problems are not solvably by any algorithm. Other problems are intractable. The
+#     algorithms that solve these problems take too long or require too much memory to be of practical value. Analysis of
+#     algorithms is an important part of computer science; throughout this book we will touch on some of the fundamental
+#     principals. Chapter 13 has examples of unsolvable and intractable problems."]
 
 #  4. Which of the following is not an example of secondary memory [A]
 #     a) RAM
 #     b) hard drive
 #     c) USB flash drive
 #     d) DVD
+#     [Explanation: p.6: Secondary memory provides more permanent storage. RAM is volatile and is another term for main memory.]
 
 #  5. Computer languages designed to be used and understood by humans are [B]
 #     a) natural languages
 #     b) high-level computer languages
 #     c) machine languages
 #     d) fetch-execute languages
+#     [Explanation: p.7: Programming languages that are "designed to be used and understood by humans" are known as "high-level
+#     computer langagues."]
 
 #  6. A statement is [B]
 #     a) a translation of machine language

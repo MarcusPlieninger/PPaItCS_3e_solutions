@@ -40,7 +40,7 @@
 #     Python itself. These names are called reserved words or keywords and cannot be used as ordinary
 #     identifiers."]
 
-#  6. Expressions are built from literals, variables and operators.
+#  6. Expressions are built from literals, variables and operators. TRUE
 #     [Explanation: p.32: "The simplest kind of expression is a literal." p.33 "A simple identifier
 #     can also be an expression. We use identifiers as variables to give names to values. When an
 #     identifier appears as an expression, its value is retrieved to provide a result for the
@@ -77,19 +77,40 @@
 #  1. Which of the following is not a step in the software development process? [C]
 #     (a) specification     (b) testing/Debugging
 #     (c) fee setting       (d) maintenance
+#     [Explanation: p.50: The software development process involves the following steps:
+#                             1. Problem Analysis
+#                             2. Program Specification
+#                             3. Design
+#                             4. Implementation
+#                             5. Testing/Debugging
+#                             6. Maintenance
 
-#  2. What is the correct formula for converting Celsius to Fahrenheit? [?]
+#  2. What is the correct formula for converting Celsius to Fahrenheit? [A]
 #     (a) F = 9/5(C) + 32       b) F = 5/9(C) - 32
 #     (c) F = B^2 - 4AC         d) F = (212 - 32) / (100 - 0)
+#     [Explanation: p.29 "She knows that 0 degrees Celsisus (freezing) is equal ti 32 degrees
+#     Fahrenheit. With this information, she computes the ratio of Fahrenheit to Celsius degrees as
+#     (212-32)/(100-0) = 180/100 = 9/5. Using F to represent the Fahrenheit temperature and C for
+#     Celsius, the conversion formula will have the form F = (9/5)C + k for some constant K. Plugging
+#     in 0 and 32 for C and F, respectively, Susan immediately sees that k = 32. So the final formula
+#     for the relationship is F = (9/5)C + 32."]
 
 #  3. The proces of describing exactly what a computer program will do to solve a problem is called [D]
 #     (a) design     (b) implementation     (c) programming     (d) specification
+#     [Explanation: p.50: "Program Specification: Deciding exactly what the program will do."]
 
 #  4. Which of the following is not a legal identifier? [C]
 #     (a) spam     (b) spAm     (c) 2spam     (d) spam4U
+#     [Explanation: p.31: "Python has some rules about how identifiers are formed. Every identifier must
+#     begin with a letter or underscore (the "_" character) which may be followed by any sequence of
+#     letters, digits, or underscores."]
 
 #  5. Which of the following are not used in expressions? [B]
 #     a) variables     (b) statements     (c) operators     (d) literals
+#     [Explanation: p.32: "The simplest kind of expression is a literal." p.33: "A simple identifier
+#     can also be an expression. We use identifiers as variables to give names to values." p.32: "More
+#     complex and interesting expressions can be constructed by combining simpler expressions with
+#     operators." p.523: "statement: A Single command in a programming langauge."]
 
 #  6. Fragments of code that produce or calculate new data values are called [B]
 #     a) identifiers            b) expressions
