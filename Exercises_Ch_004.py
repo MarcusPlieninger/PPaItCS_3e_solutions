@@ -176,6 +176,11 @@
 
       main()
 
+#    Another idea for a solution: Is it possible to pass a decision structure (e.g., ifelif statement) as a parameter to Point method?
+#    If so, this could be implemented for the different colors, which would obviate need for list. But, I think the current solution
+#    is the cleanest. Also, passing a decision structure as a parameter could be more appropriate to functional programming. Need to
+#    research that.
+
 
 #  3. Write a program that draws some sort of face.
 
