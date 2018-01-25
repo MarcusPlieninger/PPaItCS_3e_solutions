@@ -79,10 +79,96 @@
 # 10. What color is color_rgb(0,255,255)?
 
 
-
 ## Discussion
 
 #  1.
 
+#  2. Describe in your own words the object produced by each of the following operations from the graphics module.
+#     Be as precise as you can. Be sure to mention such things as the size, position, and appearance of the various
+#     objects. You may include a sketch if that helps.
+
+#     a) Point(130, 130)
+#        Constructs a point at x coordinate 130 and y coordinate 130, with 0,0 being located at upper left hand corner.
+
+#     b) c = Circle(Point(30,40), 25)
+#        c.setFill("blue")
+#        c.setOutline("red")
+
+#     c)
+
+#     d)
+
+#     e)
+
+#     f)
+
+#     g)
+
+#  3.  Describe what happens when the following interactive graphics program runs:
+#
+#      from graphics import *
+#
+#      def main():                          # Defines the function named main() (i.e., the program)
+#          win = GraphWin()                 # Openstucts GraphWin object with "Graphics Window" default title and default size 200 x 200 pixels
+#          shape = Circle(Point(50,50), 20) # Constructs a circle object with center Point object at 50,50 and radius of 20 pixels
+#          shape.setOutline("red")          # Calls setOutline method of circle object named shape, seting its outline to the color red
+#          shape.setFill("red")             # Calls setFill method of circle object shape, it fills itself with the color red
+#          shape.draw(win)                  # Calls draw method of circle object named shape, it draws itself in graphics window object named win
+#          for i in range(10):              # Creates a counted loop that will iterate 10 times
+#              p = win.getMouse()           # Calls getMouse() method of graphics window object win, pauses program for user to click in win, returns mouse click as Point object,
+#                                           # which is assigned to the variable p (an event object)
+#              c = shape.getCenter()        # Calls getCenter() method of circle object shape, returns a clone of the center point of shape
+#              dx = p.getX() - c.getX()     # Assignment statement whereby variable dx is assigned the expression in the getX() methods of p and c are used to calculate the
+                                            # difference along the x axis of the user's mouse click with respect to the center point of shape
+#              dy = p.getY() - c.get&()     # Assignment statement whereby variable dy is assigned a similar expression as dx, except this time it is for the Y axis
+#              shape.move(dx, dy)           # Calls the move() method of shape to move shape by the x distance referred to by dx and the y distance referred to by dy, thus
+#                                           # changing the state of shape by moving its center point to the new coordinates encapsulated in the event object p
+#         win.close()                       # Calls close() method of graphics window object named, closing the graphics window after the loop is finished.
+#                                           # Note that it will not be possible to see the final location of the circle. To do so, comment out win.close() or call on win's
+#                                           # getMouse() method to make win close after a mouse click.
+#      main()                               # Calls the function named main() (i.e., the program).
+
 
 ### PROGRAMMING EXERCISES
+
+#  1. Alter the program from the last discussion question in the following ways:
+#     a) Make it draw squares instead of circles.
+#        Delete: shape = Circle(Point(50,50), 20)
+#        Replace: shape = Rectangle(Point(30,70), Point(70,30))
+#     b) Have each sucessive click draw an additional square on the screen (rather than moving the existing one).
+#        Delete:  shape.move(dx, dy)
+#        Replace: newshape = shape.clone()
+#                 newshape.move(dx,dy)
+#                 newshape.draw()
+#     c) Print a message on the window "Click again to quit" after the loop, and wait for a final clikc before closing the window.
+
+
+#  2. An archery target consists of a central circle of yellow surrounded by concentric rings of red, bue, black and white. Each
+#     ring has the same width, which is the same as the radius of the yellow circle. Write a program that draws such a target.
+#     Hint: Objects drawn later will appear on top of objects drawn earlier.
+
+#  3. Write a program that draws some sort of face.
+
+#  4. Write a program that draws a winter scene with a Cristmas tree and a snowman.
+
+#  5. Write a program that draws 5 dice on the screen depicting a straight (1,2,3,4,5 or 2,3,4,5,6).
+
+#  6. Modify the graphical future value program so that the input (principal and APR) also are done in a graphical fashion using
+#     Entry objects.
+
+#  7. Circle Intersection.
+
+#  8. Line Segment Information.
+ 
+#  9. Rectangle Information.
+
+# 10. Triangle Information.
+
+# 11. Five-click House.
+
+
+
+
+
+
+
