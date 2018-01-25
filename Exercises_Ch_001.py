@@ -173,27 +173,60 @@
 
 # 1. Start up an interactive Python session and try typing in each of the following commands. Write down the results you see there.
 #                                  Expected        | Actual
-#    a) print("Hello, world!")     'Hello, world!' | 
-#    b) print("Hello", "world!")   'Hello' 'world!'|
-#    c) print(3)                   3               | 
-#    d) print(3,0)                 '3,0'           | 
-#    e) print(2 + 3)               5               | 
-#    f) print(2.0 + 3.0)           5.0             | 
-#    g) print("2" + "3")           23              | 
-#    h) print("2 + 3 =", 2 + 3)    2 + 3 = 5       | 
-#    i) print(2 * 3)               6               | 
-#    j) print(2 ** 3)              8               | 
-#    k) print(7 / 3)               2.3333333333335 | 
-#    l) print(7 // 3)              2               | 
+#    a) print("Hello, world!")     'Hello, world!' | Hello, world! [See p.33 for explanation.]
+#    b) print("Hello", "world!")   'Hello' 'world!'| Hello world!  [See p.33 for explanation.]   
+#    c) print(3)                   3               | 3
+#    d) print(3,0)                 '3,0'           | 3 0 [Explanation: Without "", , is separator.]
+#    e) print(2 + 3)               5               | 5
+#    f) print(2.0 + 3.0)           5.0             | 5.0
+#    g) print("2" + "3")           23              | 23
+#    h) print("2 + 3 =", 2 + 3)    2 + 3 = 5       | 2 + 3 = 5
+#    i) print(2 * 3)               6               | 6
+#    j) print(2 ** 3)              8               | 8
+#    k) print(7 / 3)               2.3333333333335 | 2.3333333333333335 [Question: What determines length of mantissa?]
+#    l) print(7 // 3)              2               | 2
 
 # 2. Enter and run the chaos program from Section 1.6. Try it out with various values of input to see that it functions as described
 #    in the chapter.
+#
+#    INPUT:  .1          INPUT: .2           INPUT: .3           INPUT: .9243        INPUT: .00001         INPUT: .000011
+#    OUTPUT:             OUTPUT:             OUTPUT:             OUTPUT:             OUPUT:                OUTPUT:
+#    0.35100000000000003 0.6240000000000001  0.819               0.27288108899999997 3.899961e-05          4.28995281e-05 
+#    0.8884161           0.9150335999999998  0.5781321000000001  0.7738263010380788  0.0001520925472186374 0.0001673009821489063
+#    0.3866184397170808  0.30321373239705673 0.951191962303401   0.6825747117532334  0.0005930707187953    0.0006523646708680855
+#    0.9248640249724619  0.8239731430433209  0.18106067129594494 0.8449992510500727  0.00231160404507945   0.0025425624556967255
+#    0.2710131851083772  0.5656614700878645  0.5782830479626462  0.5108045154220668  0.008994416074091065  0.009890781544236867
+#    0.7705036505625796  0.9581854282490118  0.9510998811665442  0.9745447235413278  0.034762714558951066  0.0381925205402561
+#    0.6896283226260395  0.1562578420270518  0.18138469912496583 0.09674849090043053 0.13086164611823145   0.14326202246864903
+#    0.8347602871063352  0.5141811824451928  0.5790887311884146  0.34081405959478733 0.443573815204487     0.4786782600086812
+#    0.5379486456882877  0.9742156868513789  0.950605393136126   0.8761733618715016  0.9625827341107481    0.9732269952745961
+#    0.9693836111326567  0.09796598114189214 0.1831236407388855  0.42312504709133986 0.1404671350002371    0.10161922267917184
 
 # 3. Modify the chaos program using 2.0 in place of 3.9 as the multiplier in the logistic function. Your modified line of code should
 #    look like this:
+#
 #    x = 2.0 * x * (1 - x)
 #    Run the program for various input values and compare the results to those obtained from the original program. Write a short paragraph
 #    describing any differences that you notices in the behavior of the two versions.
+#
+#
+#    INPUT:  .1          INPUT: .2           INPUT: .3           INPUT: .9243        INPUT: .00001          INPUT: .000011
+#    OUTPUT:             OUTPUT:             OUTPUT:             OUTPUT:             OUPUT:                 OUTPUT:
+#    0.18000000000000002 0.32000000000000006 0.42                0.13993901999999997 1.99998e-05            2.1999758e-05
+#    0.2952              0.43520000000000003 0.4872              0.24071218136287917 3.9998800015999924e-05 4.3998548021295886e-05
+#    0.41611392          0.49160192          0.49967231999999995 0.36553965421280704 7.99944002239944ee-05  8.79932242981358e-05
+#    0.4859262511644672  0.4998589445046272  0.4999997852516352  0.46384083082157695 0.00015997600223985442 0.00017597096298122686
+#    0.49960385918742867 0.49999996020669446 0.4999999999999078  0.4973850289686524  0.00031990081983712356 0.0003518799944028286
+#    0.49999968614491325 0.49999999999999684 0.49999999999999994 0.4999863238530105  0.0006395969666051822  0.0007035123497447354
+#    0.49999999999980305 0.49999999999999994 0.49999999999999994 0.49999999962592606 0.0012783757646509832  0.0014060348402369842
+#    0.5                 0.49999999999999994 0.49999999999999994 0.49999999999999994 0.0025534830401106722  0.002808115812530048
+#    0.5                 0.49999999999999994 0.49999999999999994 0.49999999999999994 0.005093925528949078   0.005600460596226933
+#    0.5                 0.49999999999999994 0.49999999999999994 0.49999999999999994 0.010135954903309199   0.011138190874674084
+
+#    Observation: In general, when the multiplier is 2, the logistic function appears to behave in a "less random" fashion insofar as it
+#    returns values that have less variance. In fact, even when the input values are close together, the output values are very similar.
+#    So, it is less "choatic" in its output both for one given input as well as across differnt inputs., especially if they are close together.
+
 
 # 4. Modify the chaos program so that it prints out 20 values instead of 10.
 #    Solution:
@@ -202,7 +235,7 @@
      def main():
          print("Ths program illustrates a chaotic function")
          x = eval(input("Enter a number between 0 and 1: "))
-         for i in range (20):
+         for i in range(20):
              x = 3.9 * x * (1 - x)
              print(x)
         
@@ -214,36 +247,41 @@
          print("This program illustrates a chaotic function")
          x = eval(input("Enter a number between 0 and 1: "))
          n = eval(input("How many numbers should I print? "))
-         for i in range (n):
+         for i in range(n):
              x = 3.9 * x * (1 - x)
              print(x)
          
 # 6. The calculation performed in the chaos program can be written in a number of ways that are algebraically equivalent. Write a version of
 #    the program for each of the following ways of doing the computation. Have your modified programs print out 100 iterations of the calculation
 #    and compare the results when run on the same input.
-#    a) 3.9 * x * (1 - x)
-     def main():
-         print("Ths program illustrates a chaotic function")
-         x = eval(input("Enter a number between 0 and 1: "))
-         for i in range (100):
-             x = 3.9 * x * (1 - x)
-             print(x)
-
+#
+#    Chaos programs:
+#
+#    a) 3.9 * x * (1 - x)                                                                   
+#    def main():                                             
+#        print("Ths program illustrates a chaotic function")
+#        x = eval(input("Enter a number between 0 and 1: "))     
+#        for i in range(100):                                    
+#            x = 3.9 * x * (1 - x)
+#            print(x)
+#
 #    b) 3.9 * x (x - x * x)
-     def main():
-         print("Ths program illustrates a chaotic function")
-         x = eval(input("Enter a number between 0 and 1: "))
-         for i in range (100):
-             x = 3.9 * x(X - X * x)
-             print(x)
-             
+#     def main():
+#         print("Ths program illustrates a chaotic function")
+#         x = eval(input("Enter a number between 0 and 1: "))
+#         for i in range (100):
+#             x = 3.9 * (x - x * x)
+#             print(x)
+#             
 #    c) 3.9 * x - 3.9 * x * x
-     def main():
-         print("Ths program illustrates a chaotic function")
-         x = eval(input("Enter a number between 0 and 1: "))
-         for i in range (100):
-             x = 3.9 * x - 3.9 * X * X
-             print(x)
+#     def main():
+#         print("Ths program illustrates a chaotic function")
+#         x = eval(input("Enter a number between 0 and 1: "))
+#         for i in range (100):
+#             x = 3.9 * x - 3.9 * x * x
+#             print(x)
+#
+#     OUTPUT COMPARISON
 
 #    Explain the results of this experiment. Hint: See discussion question number 4, above.
 
@@ -251,17 +289,21 @@
 #    1.8. (Note: You will probably not be able to get the columns to line up as nicely as those in the example. Chapter 5 discusses how to print
 #    numbers with a fixed number of decimal places).
 
+#    Basic version.
      def main():
          print("Ths program illustrates a chaotic function")
-         x = eval(input("Enter a number between 0 and 1: "))
-         y = eval(input("Enter a second number betweeon 0 and 1: "))
-         print(input     x     y /n --------------------)
-         for i in range (100):
+         x, y = eval(input("Enter 2 numbers between 0 and 1 separated by a comma: "))
+         for i in range (10):
              x = 3.9 * x * (1 - x)
              y = 3.9 * x * (1 - x)
-             print(x     y)
+             print(x, y)
 
 
+main()
+
+#    More secure version.
+
+#    More secure version with column headers.
 
 
 
