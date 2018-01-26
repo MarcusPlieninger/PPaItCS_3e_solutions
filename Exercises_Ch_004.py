@@ -2,9 +2,7 @@
 #### Chapter 4: Objects and Graphics
 #### End-of-Chapter Exercises
 
-
 ### REVIEW QUESTIONS
-
 
 ## True/False
 
