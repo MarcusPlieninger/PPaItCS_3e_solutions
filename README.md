@@ -19,10 +19,10 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |:closed_book:||:book:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
 |-------------|------|------------|---------|------|---------|----------------|---------|----------|----------|-|---|------|-----------|-|
 | 1|Computers and Programs|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 2|Writing Simple Programs|:construction:|:heavy_check_mark:||:construction:||:construction:|
-| 3|Computing with Numbers|:construction:|:heavy_check_mark:||:construction:|
-| 4|Objects and Graphics|:construction:|:heavy_check_mark:||:construction:||||:construction:|
-| 5|Sequences: Strings, Lists, and Files|:construction:|:heavy_check_mark:||:construction:||:construction:
+| 2|Writing Simple Programs|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 3|Computing with Numbers|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 4|Objects and Graphics|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 5|Sequences: Strings, Lists, and Files|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 6|Defining Functions|:construction:|:heavy_check_mark:
 | 7|Decision Structures|:construction:|:heavy_check_mark:||:construction:
 | 8|Loop Structures and Booleans|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:
