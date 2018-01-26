@@ -18,19 +18,19 @@ This book has 13 chapters, with exercises at the end of each chapter.
 
 |:closed_book:||:book:|:thinking:|:bulb:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
 |-------------|-|------|----------|------|------------|---------|------|---------|----------------|----------|---------|---------|-|------|-----------|-----------------|
-| 1|Computers and Programs|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 2|Writing Simple Programs|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 3|Computing with Numbers|:construction:|<sub>Float</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 4|Objects and Graphics|:construction:|<sub>methods vs functions</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 5|Sequences: Strings, Lists, and Files|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 6|Defining Functions|:construction:|||:heavy_check_mark:
-| 7|Decision Structures|:construction:|||:heavy_check_mark:||:construction:
-| 8|Loop Structures and Booleans|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:
-| 9|Simulation and Design|:construction:|||:heavy_check_mark:
-|10|Defining Classes|:construction:|||:heavy_check_mark:
-|11|Data Collections|:construction:|||:heavy_check_mark:
-|12|Object-Oriented Design|:construction:|||:heavy_check_mark:
-|13|Algorithm Design and Recursion|:construction:|<sub>anagram, tower of hanoi</sub>||:heavy_check_mark:||:construction:||:construction:||
+| 1|<sub>Computers and Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 4|<sub>Objects and Graphics</sub>|:construction:|<sub>methods vs functions</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 5|<sub>Sequences: Strings, Lists, and Files</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 6|<sub>Defining Functions</sub>|:construction:|||:heavy_check_mark:
+| 7|<sub>Decision Structures</sub>|:construction:|||:heavy_check_mark:||:construction:
+| 8|<sub>Loop Structures and Booleans</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:
+| 9|<sub>Simulation and Design</sub>|:construction:|||:heavy_check_mark:
+|10|<sub>Defining Classes</sub>|:construction:|||:heavy_check_mark:
+|11|<sub>Data Collections</sub>|:construction:|||:heavy_check_mark:
+|12|<sub>Object-Oriented Design</sub>|:construction:|||:heavy_check_mark:
+|13|<sub>Algorithm Design and Recursion</sub>|:construction:|<sub>anagram, tower of hanoi</sub>||:heavy_check_mark:||:construction:||:construction:||
 
 Legend: 
 - :closed_book: = Chapter
