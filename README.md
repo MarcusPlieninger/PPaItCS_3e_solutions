@@ -20,7 +20,7 @@ This book has 13 chapters, with exercises at the end of each chapter.
 |-------------|-|------|----------|------|------------|---------|------|---------|----------------|----------|---------|---------|-|------|-----------|-----------------|
 | 1|<sub>Computers and Programs</sub>|:construction:|<sub>"logistic"</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>|<sub>32bit Int</sub>|:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 4|<sub>Objects and Graphics</sub>|:construction:|<sub>methods vs functions</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 5|<sub>Sequences: Strings, Lists, and Files</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 6|<sub>Defining Functions</sub>|:construction:|||:heavy_check_mark:
