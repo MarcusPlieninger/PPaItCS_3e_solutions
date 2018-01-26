@@ -16,26 +16,28 @@ The purpose of this project is to learn a popular programming language (i.e., Py
 
 This book has 13 chapters, with exercises at the end of each chapter.
 
-|:closed_book:||:book:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
-|-------------|------|------------|---------|------|---------|----------------|---------|----------|----------|-|---|------|-----------|-|
-| 1|Computers and Programs|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 2|Writing Simple Programs|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 3|Computing with Numbers|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 4|Objects and Graphics|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 5|Sequences: Strings, Lists, and Files|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 6|Defining Functions|:construction:|:heavy_check_mark:
-| 7|Decision Structures|:construction:|:heavy_check_mark:||:construction:
-| 8|Loop Structures and Booleans|:construction:|:heavy_check_mark:||:construction:||:construction:||:construction:
-| 9|Simulation and Design|:construction:|:heavy_check_mark:
-|10|Defining Classes|:construction:|:heavy_check_mark:
-|11|Data Collections|:construction:|:heavy_check_mark:
-|12|Object-Oriented Design|:construction:|:heavy_check_mark:
-|13|Algorithm Design and Recursion|:construction:|:heavy_check_mark:||:construction:||:construction:||
+|:closed_book:||:book:|:thinking:|:bulb:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
+|-------------|-|------|----------|------|------------|---------|------|---------|----------------|----------|---------|---------|-|------|-----------|-----------------|
+| 1|Computers and Programs|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 2|Writing Simple Programs|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 3|Computing with Numbers|:construction:|Float||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 4|Objects and Graphics|:construction:|methods vs functions||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 5|Sequences: Strings, Lists, and Files|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 6|Defining Functions|:construction:|||:heavy_check_mark:
+| 7|Decision Structures|:construction:|||:heavy_check_mark:||:construction:
+| 8|Loop Structures and Booleans|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:
+| 9|Simulation and Design|:construction:|||:heavy_check_mark:
+|10|Defining Classes|:construction:|||:heavy_check_mark:
+|11|Data Collections|:construction:|||:heavy_check_mark:
+|12|Object-Oriented Design|:construction:|||:heavy_check_mark:
+|13|Algorithm Design and Recursion|:construction:|anagram, tower of hanoi||:heavy_check_mark:||:construction:||:construction:||
 
 Legend: 
 - :closed_book: = Chapter
 - :book: = Read
 - :keycap_ten: = True/false Questions
+- :thinking: = Concepts I have trouble with
+- :bulb: = Concepts I had trouble with but now understand
 - :abcd: = Multiple choice questions
 - :speech_balloon: = Discussion questions
 - :computer: = Programming exercises
