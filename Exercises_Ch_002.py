@@ -2,9 +2,7 @@
 #### Chapter 2: Writing Simple Programs
 #### End-of-Chapter Exercises
 
-
 ### REVIEW QUESTIONS
-
 
 ## True/False
 
@@ -173,18 +171,26 @@
 
 ### PROGRAMMING EXERCISES
 
-#  1.
+#  1. A user-friendly program should print an introduction that tells the user what the program does. Modify the
+#     convert.py program (Section 2.2) to print out an introduction.
 
-#  2.
+#  2. On many systems with Python, it is posible to run a program by simply clicking (or double-clicking) on the
+#     icon of the program file. If you are able to run the convert.py program this way, you may discover another
+#     usability issue. The program starts running in a new window, but as soon as the program is finished, the
+#     window disappears so that you cannot read the results. Add an input statement at the end of the program so
+#     that it pauses to give the user a chance to read the results. Something like this should work:
+#
+#     input("Press the <Enter> key to quit.")
 
-#  3.
+#  3. Modify the avg2.py program (Section 2.5.3) to find the average of three exam scores.
 
-#  4.
+#  4. Modify the convert.py program (Section 2.2) with a loop so that it executes 5 times before quitting. EAch time
+#     through the loop, the program should get another temperature from the user and print a converted value.
 
 #  5. Modfiy the convert.py program (Section 2.2) with a loop so that it executes 5 times before quitting. Each
 #     time through the loop, the program should get another temperature from the user and print the converted value.
 
-#  6. Modify the futval.py program (SEction 2.7) so that the number of yaers for the investment is also a user
+#  6. Modify the futval.py program (Section 2.7) so that the number of yaers for the investment is also a user
 #     input. Make sure to change the final message to reflect teh correct number of years.
 
 #  7. Suppose you have an investment plan where you invest a certain fixed amount every year. Modify futeval.py

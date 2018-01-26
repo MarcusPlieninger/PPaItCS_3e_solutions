@@ -81,28 +81,37 @@
 
 ## Discussion
 
-#  1.
+#  1. Pick an example of an interesting real-world object and describe it as a programming object by listing its
+#     data (attributes, what it "knows") and its methods (behaviors, what it can "do").
 
 #  2. Describe in your own words the object produced by each of the following operations from the graphics module.
 #     Be as precise as you can. Be sure to mention such things as the size, position, and appearance of the various
 #     objects. You may include a sketch if that helps.
-
+#
 #     a) Point(130, 130)
 #        Constructs a point at x coordinate 130 and y coordinate 130, with 0,0 being located at upper left hand corner.
-
+#
 #     b) c = Circle(Point(30,40), 25)
 #        c.setFill("blue")
 #        c.setOutline("red")
+#
+#     c) r = Rectangle(Point(20,20), Point(40,40))
+#        r.setFill(color_rgb(0,255,150)
+#        r.setWidth(3)
+#
+#     d) l = Line(Point(100,100), Point(100,200))
+#        l.setOutline("red4")
+#        l.setArrow("first")
 
-#     c)
+#     e) Oval(Point(50,50), Point(60,100))
 
-#     d)
+#     f) shape = Polygon(Point(5,5), Point(10,10), Point(5,10), Point(10,5))
+#        shape.setFill("orange")
 
-#     e)
-
-#     f)
-
-#     g)
+#     g) t = Text(Point(100,100), "Hello World!")
+#        t.setFace("courier")
+#        t.setSize(16)
+#        t.setStyle("italic")
 
 #  3.  Describe what happens when the following interactive graphics program runs:
 #
@@ -157,22 +166,26 @@
 #     ring has the same width, which is the same as the radius of the yellow circle. Write a program that draws such a target.
 #     Hint: Objects drawn later will appear on top of objects drawn earlier.
 
+#     Note: Add text here about algorithm design
+
+#     target.py
+#     A program to draw a target of any size and any number of rings of different color.
+
       from graphics import *
 
       def main():
-          winwidth = 200
-          winlength = winwidth
-          r = (winwidth / 2)
-          center = Point((winwidth / 2),(winlength / 2))
-          color = ["white", "black", "blue", "red"] # a little advanced for this chapter, but it makes sense
+        squareside= 200 # single point of control that allows resizing of target
+        r = (squareside / 2)
+        center = Point((squareside / 2),(squareside/ 2))
+        color = ["white", "black", "blue", "red", "yellow", "green"] # use this list to add or delete colors for simpler or more complex targets
 
-          win = GraphWin("Ready, Aim, Fire!", winwidth, winlength)
+        win = GraphWin("Ready, Aim, Fire!", squareside, squareside)
 
-          for i in range(4):
-        
-              aim = Circle(center, r - ((r * i)/4))
-              aim.setFill(color[i])
-              aim.draw(win)
+        for i in range(len(color)): # len() is used so that a target of any number of circles can be drawn
+
+            aim = Circle(center, r - (r * (i / len(color)))) # len(0 is used to get the proportion of part to whole
+            aim.setFill(color[i])
+            aim.draw(win)
 
       main()
 
@@ -192,14 +205,44 @@
 #     Entry objects.
 
 #  7. Circle Intersection.
+#     Write a program that computes the intersection of a circle with a horizontal line and displays the information textually and graphically.
+#     Input: Radius of the circle and the y-intercept of the line.
+#     Output: Draw a circle centered at (0,0) with teh given radius in a window with coordinates running from -10,-10 to 10,10.
+#     Draw a horizontal line across the window and the given-y intercept.
+#     Draw the two points of intersection in red.
+#     Print out the x values of the points of intersection.
+#     Formula: x = + or -(sqrt((r^2 = y^2)))
 
 #  8. Line Segment Information.
+#     This program allows the suer to draw a line segment that then displays some graphical and textual information about the line segment.
+#     Input: Two mouse clicks for the end points of the line segment.
+#     Output: Draw the midpoint of the segment in cyan.
+#             Draw the line.
+#             Print the length and the slope of the line.
+#     Formulas: dx = x2 - x1
+#               dy = y2 - y1
+#               slope = dy / dx
+#               length = sqrt(dx^2 + dy^2)
  
 #  9. Rectangle Information.
+#     This program displays information about a rectangle drawn by the user.
+#     Input: Two mouse clicks for the opposite corners of a rectangle.
+#     Output: Draw the rectangle.
+#             Print the perimeter and area of the rectangle.
+#     Formulas: area = (length)(width)
+#               perimeter = 2(length + width)
 
 # 10. Triangle Information.
-
+#     Same as the previous problem, but with three clicks for the vertices of the triangle.
+#     Formulas: For perimeter, see length fromt he Line Segment problem.
+#               area = sqrt(s(s - a)(s - b)(s - c)) where a, b, and c are the lengths of the sides and s = (a + b + c) / 2.
+     
 # 11. Five-click House.
+#     You are to write a program that allows the user to draw a simple house using five mouse clicks. The fisrt two clicks will be the opposite
+#     corners of the rectangular frame of the house. The third click will indicate the center of the otp ege of a rectangular door. The door should
+#     have a total width that is 1/5 the wdith of the house frame. The sides of the door should have extend from the corners of the top down to the
+#     bottom of the frame. The fourth click will indicate the center of a square window. The window is half as wide as the door. The last click will
+#     indicate the peak of the roof. The edges of the roof will extend from the point at the peak to the corners of the top edge of the house frame.
 
 
 

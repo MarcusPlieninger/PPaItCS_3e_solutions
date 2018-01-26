@@ -2,9 +2,7 @@
 #### Chapter 5: Sequnces: Strings, Lists, and Files
 #### End-of-Chapter Exercises
 
-
 ### REVIEW QUESTIONS
-
 
 ## True/False
 
@@ -168,43 +166,104 @@
 #     g) "{1:3}".format("14")
 
 
-
 #  5. Explain why public key encryption is more useful for securing commmunications on the Internet than
 #     private (shared) key encryption.
 
 
-
-
 ### PROGRAMMING EXERCISES
 
-#  1.
+#  1. The example code files for Chapter 5 include a date conversion program, dateconvert2.py. This program could be
+#     simplified with string formatting. Modify the program to use the string format method for its output.
 
-#  2.
+#  2. A certain CS professor gives 5-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F. Write a
+#     program that accepts a quiz score as an input and prints out the corresponding grade.
 
-#  3.
+#  3. A certain CS provessor gives 100-point exams that are graded on the cale 90-100:A, 80-89:B, 70-79:C, 60-69:D, <60:F.
+#     Write a program that accepts an exam xcore as input and prints out the corresponding grade.
 
-#  4.
+#  4. An acronym is a word formed by taking the first letters of the words in a phrase and making a word from them. For
+#     example, RAM is an acronym for "random access memory." Write a program that allows the user to type in a phrase and
+#     then outputs the acronym for that phrase. Note: The acronym should be all uppercase, even if the words in the phrase
+#     are not capitalized.
 
-#  5.
+#  5. Numerologists claim to be able to determine a person's character traits based on the "numeric value" of a name. The value
+#     of a name is determined by summing up the values of the letters of the name where "a" is 1, "b" is 2, "c" is 3, up to "z"
+#     being 26. For example, the name "Zelle" would have the value 26 + 5 + 12 + 12 + 5 = 60 (which happens to be a very
+#     auspicious number, by the way). Write a program that calculates the numeric value of a single name provided as input.
 
-#  6.
+#  6. Expand your soluation to the previous problem to allow the calcualtion of a complete name such as "John Marvin Zelle" or
+#     "John Jacob Jingleheimer Smith." The total value is just the sum of the numberic values of all the names.
 
-#  7.
+#  7. A Caesar cipher is a simple substitution sipher based on the diea of shifting each letter of the plaintext message a fixed
+#     number (called the key) of positions in the alphabet. For example, if the key is 2, the word "Sourpuss" would be encoded as
+#     "Uqwtrwuu." The original message can be recovered by "reencoding" it using the negative of the key.
+#
+#     Write a program that can enconde and decode Caesar ciphers. The input to the progrma will be a string of plaintext and the
+#     value of the key. The output will be an encoded message where each character in the original message is replaced by shifting
+#     it key characters in the Unicode character set. For exmaple, if ch is a character in the string and key is the amount to shift,
+#     then the character that replaces ch can be calculated as: chr(ord(ch) + key).
 
-#  8.
+#  8. One problem with the previous exercise is that it does not deal with the case when we "drop off the end" of the alphabet. A
+#     true Caesar cipher does the shifting in a circular fashion where the next character after "z" is "a." Modify your solution
+#     to the previous problem to make it circular. You may assume that the input consists only of letters and paces.
+#     Hint: Make a string containing all the cahracters of your alphabet and use positions in this string as your code. You do not
+#     have to shift "z" int "a"; jsut make sure that you use a circular shift over the entire sequence of characters in your alphabet
+#     string.
 
-#  9.
+#     Note to self: modular.
 
-# 10.
+#  9. Write a program that counts the number of words in a sentence entered by the user.
 
-# 11.
+# 10. WRite a program that calculates the average word length in a sentence entered by the user.
+ 
+# 11. Write an improved version of the chaos.py program from Chapter 1 that allows a user to input two initial values and the number of
+#     of iterations, and then prints a nicely formatted table showing how the values change over time. For example, if the starting
+#     values were .25 and .26 with 10 iterations, the table might look like this:
 
-# 12.
+#     index    0.25         0.26
+#     ----------------------------
+#       1    0.731250     0.750360
+#       2    0.766441     0.730547
+#       3    0.698135     0.767707
+#       4    0.821896     0.695499
+#       5    0.570894     0.825942
+#       6    0.955399     0.560671
+#       7    0.166187     0.960644
+#       8    0.540418     0.147447
+#       9    0.968629     0.490255
+#      10    0.118509     0.974630
 
-# 13.
+# 12. Write an imroved version fo the futval.py program from Chapter 2.
+#     Your program will prompt the user for the amoutn of the investment, the annualized interest rate, and the number of years of the
+#     investment. The program will then output a nicely formatted table taht tracks the value of the investment year by year. Your
+#     output might look something like this:
+#
+#     Year     Value
+#     ________________
+#       0     $2000.00
+#       1     $2200.00
+#       2     $2420.00
+#       3     $2662.00
+#       4     $2928.20
+#       5     $3221.02
+#       6     $3542.12
+#       7     $3897.43
 
-# 14.
+# 13. Redo any of the previous programming exercises to make hem batch-oriented (using text files for input and output).
 
-# 15.
+# 14. Word Count. A common utility on Unix/Linux systems is a small program called "wc." This program analyzes a file to determine the
+#     number of lines, words and characters contained therein. Write your own verison of wc. The program should accept a file name as
+#     input and then print three numbers showing the count of lines, words, and characters in the file.
 
-# 16.
+# 15. Write a program to plot a horizontal bary chart of studnet exam scores. Your program should get input from a file. The first line
+#     of the file contains the count of the number of students in the file, and eah subsequent line contains a student's last name
+#     followed by a score in the range 0-100. Your program should draw a horizontal rectangle for each student where the length of the
+#     bar represents the student's score. The bars should all line up on their left-hand edges.
+#     Hint: Use the number of students to determine the size of the window and its coordinates. [Note to self: point of control.]
+#     Bonus: lable the bars at the left with the students' names.
+
+# 16. Write a program to draw a quiz score histogram. Your program should read data from a file. Each line of the file contains a number
+#     in the range 0-10. Your program must count the number of occurences of each score and then draw a vertical bar char with a bar for
+#     each possible score (0-10) with height corresponding to the count of that score. For example, if 15 students got an 8, then the
+#     the height of the for 8 should be 15.
+#     Hint: Use a list that stores the count for each possible score.

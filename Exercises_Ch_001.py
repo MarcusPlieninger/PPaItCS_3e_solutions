@@ -2,7 +2,6 @@
 #### Chapter 1: Computers and Programs
 #### End-of-Chapter Exercises
 
-
 ### REVIEW QUESTIONS
 
 ## True/False
@@ -149,11 +148,17 @@
 
 #  1. Compare and contrast the following pairs of concepts from the chapter:
 #     a) Hardware vs. Software
+#        Hardware is the body, software is the soul
 #     b) Algorithm vs. Program
+#        An algorithm is a recipe. A program is a set of instructions.
 #     c) Programming Lnaguage vs. Natural Language
+#        A programming language is pecise. A natural language is not.
 #     d) High-Level Language vs. Machine Language
+#        A high-level language is meant to be understood by humans. A machine language is understood by the computer.
 #     e) Interpreter vs. Compiler
+#        An interpreter translates code into machine language line-by-line. A compiler does so in one shot.
 #     f) Syntax vs. Symantics
+#        Syntax is form. Symantics is meaning.
 
 #  2. List and explain in your own words the role of each of the five basic functional units of a computer depicted in Figure 1.1.
 

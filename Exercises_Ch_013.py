@@ -69,7 +69,7 @@
 #  3. Recursions on sequences often use this as a base case:
 #     a) 0     b) 1     c) 9     d) 3
 
-#  4. An infinite recursion will reslut in
+#  4. An infinite recursion will result in
 #     a) a program that "hangs"
 #     b) a broken computer
 #     c) a reboot
