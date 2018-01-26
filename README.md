@@ -18,7 +18,7 @@ This book has 13 chapters, with exercises at the end of each chapter.
 
 |:closed_book:||:book:|:thinking:|:bulb:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
 |-------------|-|------|----------|------|------------|---------|------|---------|----------------|----------|---------|---------|-|------|-----------|-----------------|
-| 1|<sub>Computers and Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 1|<sub>Computers and Programs</sub>|:construction:|<sub>"logistic"</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 4|<sub>Objects and Graphics</sub>|:construction:|<sub>methods vs functions</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
@@ -51,3 +51,8 @@ Legend:
 ## Solutions 
 
 [Download link](https://fbeedle.com/our-books/23-python-programming-an-introduction-to-computer-science-3rd-ed-9781590282755.html) for end-of-chapter solutions and code.
+
+## My Questions
+- How are floats represented?
+- What determines the length of the mantissa?
+- Can a decision structure (e.g., ifelif ) be passed as a parameter to a method? 
