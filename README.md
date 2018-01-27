@@ -22,7 +22,7 @@ This book has 13 chapters, with exercises at the end of each chapter.
 | 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>|<sub>bit Int</sub>|:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 4|<sub>Objects and Graphics</sub>|:construction:|<sub>methods, functions, operations</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 5|<sub>Sequences: Strings, Lists, and Files</sub>|:construction:|<sub>ASCII, Unicode, UTF-8, private key, public key</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 5|<sub>Sequences: Strings, Lists, and Files</sub>|:construction:|<sub>ASCII, Unicode, UTF-8, private key, public key, read, write</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 6|<sub>Defining Functions</sub>|:construction:|||:heavy_check_mark:
 | 7|<sub>Decision Structures</sub>|:construction:|||:heavy_check_mark:||:construction:
 | 8|<sub>Loop Structures and Booleans</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:
