@@ -338,7 +338,106 @@
 #     Bonus: lable the bars at the left with the students' names.
 
 # 16. Write a program to draw a quiz score histogram. Your program should read data from a file. Each line of the file contains a number
-#     in the range 0-10. Your program must count the number of occurences of each score and then draw a vertical bar char with a bar for
+#     in the range 0-10. Your program must count the number of occurences of each score and then draw a vertical bar chart with a bar for
 #     each possible score (0-10) with height corresponding to the count of that score. For example, if 15 students got an 8, then the
-#     the height of the for 8 should be 15.
+#     the height of the bar for 8 should be 15.
 #     Hint: Use a list that stores the count for each possible score.
+
+#     1. Problem analysis:
+#        How to count number of occurences of possible test scores and represent the count on a vertical chart.
+#
+#     2. Specification:
+#        Inputs: file with test scores
+#        Output: histogram representing occurences of each score
+#
+#     3. Design (algorithm)
+#        import graphics library
+#        import dialog box for opening file
+#        get the file name
+#        open the file
+#        read file
+#        create empty list for scores
+#        process each line of the input file
+#        get each score
+#        append each score to empty list in output file
+#        count the number of occurences of each score
+#        store each count in a new list
+#        create graphical template for histogram using a loop
+#        define one rectangle (bar) and use variable for height
+#        define space between bars as equal to width of one bar
+#        label each bar from 0 to 10 using loop count
+#        use
+#
+#     4. Implement
+
+# histogram.py
+# Program to count the number of all possible grades from 0 to 10 and output a histogram
+
+# import graphics library
+from graphics import *
+
+# import dialog box for opening file
+from tkinter.filedialog import askopenfilename
+
+def main():
+    print("This program creates a histogram from a file of grades.")
+    print("Please select the file containing the grades.")
+
+    # get the file name
+    infileName = askopenfilename()
+
+    # create empty list to store scores
+    scores = []
+    # open and read file
+    infile = open(infileName, "r")
+    # process each line of the input file
+    for line in infile:
+        # get the score from line by converting it to int and appending to scores list
+        scores.append(int(line[:-1])) #THIS LINE IS GIVING ME TROUBLE
+    # close file
+    infile.close()
+   
+    # create empty list to store score counts
+    scorecounts = []
+    # count the number of occurences of each score and store in a new list
+    for score in range(11):
+        scorecount = [scores].count(score)
+        scorecounts.append(scorecount)
+    
+    # creates graphics window
+    histogram = GraphWin("Histogram", 400, 200)
+    histogram.setBackground("yellow")
+    # sets coordinates to simplify drawing of images
+    # note that yur is determined by number of scores + 10
+    histogram.setCoords(0, 0, 115, (len(scores) + 10))
+
+    # use loop to create graphical template for histogram
+    for i in range(11):
+        bar = Rectangle(Point((5 + (10 * i)), 5), Point((10 + (10 * i)), (scorecounts[i] + 5)))
+        bar.setFill("red")
+        bar.setWidth(3)
+        bar.setOutline("blue")
+        bar.draw(histogram)
+        label = Text(Point((7 + (10 * i)), 2), str(i))
+        label.draw(histogram)
+
+    print("Histogram has been created.")
+    print("Click anywhere on yellow window to close.")
+    histogram.getMouse()
+    histogram.close()
+
+
+main()
+
+#ERROR: FOR SOME REASONS I AM GETTING EMPTY SCORECOUNTS LIST
+
+
+#     5. Test/Debug
+#        create file with 50 different test scores
+                    
+#     6. Maintain
+
+
+
+
+
