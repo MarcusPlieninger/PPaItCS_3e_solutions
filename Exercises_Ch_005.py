@@ -434,6 +434,104 @@ main()
 
 #     5. Test/Debug
 #        create file with 50 different test scores
+#        above version did not work
+#        version below works
+
+# histogram.py
+# Program to count the number of all possible grades from 0 to 10 and output a histogram
+# this version works
+
+# import graphics library
+from graphics import *
+
+# import dialog box for opening file
+from tkinter.filedialog import askopenfilename
+
+def main():
+    print("This program creates a histogram from a file of grades.")
+    print("Please select the file containing the grades.")
+    print()
+
+    # get the file name
+    infileName = askopenfilename()
+
+    # create empty list to store scores
+    scores = []
+    # open and read file
+    infile = open(infileName, "r")
+    # process each line of the input file
+    for line in infile:
+        # get the score from line by removing newline character
+        score = line[:-1]
+        # store score by appending to scores list
+        scores.append(score)
+    # close file
+    infile.close()
+
+    # verify list of scores
+    print("Verifying scores")
+    verifyscores = " ".join(scores)
+    print(verifyscores, end='\n')
+    print()
+   
+    # create empty list to store score counts
+    scorecounts = []
+    # count the number of occurences of each score and store in a new list
+    for i in range(11):
+        scorecheck = str(i)
+        scorecount = verifyscores.count(scorecheck)
+        scorecounts.append(scorecount)
+    # Question: Why does count() method not work when looping through the list of items
+    # after they are converted from str to int? The scorecounts list ends up empty.
+
+    # verify list of score counts
+    print("Verifying score counts")
+    strscorecounts = []
+    for intscorecount in scorecounts:
+        strscorecount = str(intscorecount)
+        strscorecounts.append(strscorecount)
+    verifyscorecounts = " ".join(strscorecounts)
+    print("counts", verifyscorecounts, end='\n')
+    print("scores", "0 1 2 3 4 5 6 7 8 9 10", end='\n')
+    print()
+    
+    # creates graphics window
+    histogram = GraphWin("Histogram", 400, 200)
+    histogram.setBackground("yellow")
+    # sets coordinates to simplify drawing of images
+    # note that yur is determined by number of scores + 10
+    histogram.setCoords(0, 0, 115, (len(scores) + 10))
+
+    # use loop to create graphical template for histogram
+    for j in range(11):
+        bar = Rectangle(Point((5 + (10 * j)), 5), Point((10 + (10 * j)), (scorecounts[j] + 5)))
+        bar.setFill("red")
+        bar.setWidth(3)
+        bar.setOutline("blue")
+        bar.draw(histogram)
+        label = Text(Point((7 + (10 * j)), 2), str(j))
+        label.draw(histogram)
+
+    print("Histogram has been created.")
+    print("Click anywhere on yellow window to close.")
+    histogram.getMouse()
+    histogram.close()
+
+
+main()
+
+#   Note that when a text file created with native mac iOS text editor is used
+#   Scores are verified erroneously:
+##Verifying scores
+##{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470 {\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} \margl1440\margr1440\vieww10800\viewh8400\viewkind0 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0  \f0\fs24 \cf0 1\ 1\ 1\ 1\ 1\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 10\ 5\ 5\ 5\ 5\ 5\ 5\ 5\ 5\ 5\ 5
+##
+##Verifying score counts
+##counts 45 28 12 2 15 19 5 5 6 1 16
+##scores 0 1 2 3 4 5 6 7 8 9 10
+
+#   This program only works for text files created with IDLE.
+
+
                     
 #     6. Maintain
 
