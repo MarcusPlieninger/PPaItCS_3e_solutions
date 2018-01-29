@@ -135,9 +135,57 @@
 
 #  9.
 
-# 10.
+# 10. Automated spell-checkers are used to analyze documents and locate words that might be misspelled. These programs work by
+#     comparing each word in the document to a large dictionary (in the non-Python sense) of words. Any word not found in the
+#     dictionary, it is flagged as potentially in correct.
+#
+#     Write a program to perform spell-chcking on a text file. To do this, you will ned to get a large file of English words in
+#     alphabetical oder. If you have a Unix or Linux system available, you might poke around for a file called words, usually
+#     located in /usr/dict or /usr/share/dict. Otherwise, a quick search on the Internet should turn up something usable.
+#
+#     Your program should prompt for a file to analyze and then try to look up every word in the file using binary search. If a
+#     word is not found in the dictionary, print it on the screen as potentially incorrect.
 
-# 11.
+# 11. Write a program that solves word jumble problems. You will need a large dictionary of English words (see previous problem).
+#     The user types in a scrambled word, and your program generates all anagrams of the word then checks which (if any) are in the
+#     dictionary. The anagrams appearing in the dictionary are printed as solutions in the puzzle.
+#
+#     1. Problem analysis
+#        Given a scrambled sequence of letters, produce all possible wwords from those letters.
+#        Note: I am assuming that the words produced can be of varying length.
+
+#     2. Specification
+#        Input: a jumble of letters (e.g., hatcife)
+#        Output: All possible words of any length listed in alphabetical order
+#               (e.g., a, at, ate, cat, fat, fate, hat, hate, hit, ice, tie)
+#
+
+#     3. Design
+#        Ask user to input letters without spaces
+#        Get input from user as a string
+#        Formulate every possible combination of string
+#             For each list size of length 1 up to length of input string (e.g., 7)
+#
+#             [_] 7 possibilities                       (7)                         len(inputstr) - 0
+#             [_][_] 42 possibilites                    (7 * 6)                     * len(inputstr) - 1
+#             [_][_][_] 210 possibilities               (7 * 6 * 5)                 * len(inputstr) - 2
+#             [_][_][_][_] 840 possibilites             (7 * 6 * 5 * 4)
+#             [_][_][_][_][_] 2520 possibilites         (7 * 6 * 5 * 4 * 3)
+#             [_][_][_][_][_][_] 7560 possibilities     (7 * 6 * 5 * 4 * 3 * 2) 
+#             [_][_][_][_][_][_][_] 7560 possibilities  (7 * 6 * 5 * 4 * 3 * 2 * 1)
+#    
+#
+#             for i in range(len(instring) + 1)
+#                 outstring = instring[0] 
+#                 
+#             
+#
+#        Perform binary search within appropriate section of dictionary
+#        Print word if it is found in dictionary
+
+#     4. Implementation
+#     5. Test/debug
+#     6. Maintentance
 
 
 
