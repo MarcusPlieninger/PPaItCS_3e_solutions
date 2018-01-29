@@ -66,7 +66,7 @@
 #  2. Approximately how many iterations will binary search need to fin a value in a list of 512 items? [C]
 #     a) 512     b) 256     c) 9     d) 3
 
-#  3. Recursions on sequences often use this as a base case:
+#  3. Recursions on sequences often use this as a base case: [a]
 #     a) 0     b) 1     c) 9     d) 3
 
 #  4. An infinite recursion will result in
@@ -138,3 +138,20 @@
 # 10.
 
 # 11.
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
