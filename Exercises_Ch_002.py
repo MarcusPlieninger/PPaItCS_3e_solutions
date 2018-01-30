@@ -274,6 +274,19 @@ def main():                                                # function definition
 
 #  1. A user-friendly program should print an introduction that tells the user what the program does. Modify the
 #     convert.py program (Section 2.2) to print out an introduction.
+#
+# convert.py
+#     A program to convert Celsius temps to Fahrenheit
+# by: Susan Computewell
+
+def main():
+    print("This program coverts a temperature in Celsius to a temperature in Fahrenheit.")
+    celsius = eval(input("What is the Celsius temperature? "))
+    fahrenheit = 9/5 * celsius + 32
+    print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+
+main()
+
 
 #  2. On many systems with Python, it is posible to run a program by simply clicking (or double-clicking) on the
 #     icon of the program file. If you are able to run the convert.py program this way, you may discover another
@@ -282,6 +295,19 @@ def main():                                                # function definition
 #     that it pauses to give the user a chance to read the results. Something like this should work:
 #
 #     input("Press the <Enter> key to quit.")
+#
+# convert.py
+#     A program to convert Celsius temps to Fahrenheit
+# by: Susan Computewell
+
+def main():
+    print("This program coverts a temperature in Celsius to a temperature in Fahrenheit.")
+    celsius = eval(input("What is the Celsius temperature? "))
+    fahrenheit = 9/5 * celsius + 32
+    print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+    input("Press the <Enter> key to quit.") # Why does this work?
+main()
+
 
 #  3. Modify the avg2.py program (Section 2.5.3) to find the average of three exam scores.
 
