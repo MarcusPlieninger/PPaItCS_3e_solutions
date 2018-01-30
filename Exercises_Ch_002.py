@@ -310,19 +310,104 @@ main()
 
 
 #  3. Modify the avg2.py program (Section 2.5.3) to find the average of three exam scores.
+#
+# avg3.py
+#   A simple program to average three exam scores  
+#   Illustrates use of multiple input
+
+def main():
+    print("This program computes the average of two exam scores.")
+
+    score1, score2, score3 = eval(input("Enter two scores separated by a comma: "))
+    average = (score1 + score2 + score3) / 3
+
+    print("The average of the three scores is:", average)
+
+main()
 
 #  4. Modify the convert.py program (Section 2.2) with a loop so that it executes 5 times before quitting. EAch time
 #     through the loop, the program should get another temperature from the user and print a converted value.
+#
+# convert.py
+#     A program to convert Celsius temps to Fahrenheit five times
+# by: Susan Computewell
 
-#  5. Modfiy the convert.py program (Section 2.2) with a loop so that it executes 5 times before quitting. Each
-#     time through the loop, the program should get another temperature from the user and print the converted value.
+def main():
+    for i in range(5)
+        celsius = eval(input("What is the Celsius temperature? "))
+        fahrenheit = 9/5 * celsius + 32
+        print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+
+main()
+
+#  5. Modfiy the convert.py program (Section 2.2) so that it computes and prints a table of Celsius temperatures and the
+#     Fahrenheit equivalents every 10 degrees from 0 degress celsius to 100 degrees celsius.
+
+#converstionchart.py
+#     A program to compute and print a table of Celsius temperatures and the Fahrenheit equivalents every 10 degrees
+#     from 0 degrees celsius to 100 degrees celsius
+
+def main():
+    print("Celisus Temperatures and Their Fahrenheit Equivalents")
+    print("C ", "F", sep="          ")
+    for i in range(10):
+        celsius = 10 * i
+        fahrenheit = int(9/5 * celsius + 32)
+        print(celsius, fahrenheit, sep="          ")
+        
+main()
+        # celsius = celsius + 10
 
 #  6. Modify the futval.py program (Section 2.7) so that the number of yaers for the investment is also a user
-#     input. Make sure to change the final message to reflect teh correct number of years.
+#     input. Make sure to change the final message to reflect the correct number of years.
+
+# futval.py
+#    A program to compute the future value of an investment
+#    with number of years determined by the user
+
+def main():
+    print("This program calculates the future value")
+    print("of a multi-year investment with
+    print("non-compounding interest.")
+
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: "))
+    years = eval(input("Enter the number of years for the investment: "))
+
+    for i in range(years):
+        principal = principal * (1 + apr)
+
+    print("The value in ", years ,"years" "is:", principal)
+
+main()
+
 
 #  7. Suppose you have an investment plan where you invest a certain fixed amount every year. Modify futeval.py
 #     to compute the total accumulation of your investment. The inputs to the program will be the amount to invest
 #     each year, the interest rate, and the number of years for the investment.
+
+# futval.py
+#    A program to compute the future value of an investment
+#    with number of years determined by the user
+
+def main():
+    print("This program calculates the total future value")
+    print("of a multi-year investment with")
+    print("non-compounding interest and an additional")
+    print("investment of a certain fixed amount each year.")
+
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: "))
+    yearlyinvestment = eval(input("Enter the fixed yearly amount to invest: "))
+    years = eval(input("Enter the number of years for the investment: "))
+
+    for i in range(years):
+        
+
+    print("The value in ", years ,"years is:", totalaccumulation, sep=" ")
+
+main()
+
 
 #  8. As an alternative to APR, the interest accrued on an account is often described in terms of a nominal
 #     rate and the number of compounding periods. For example, if the interest rate is 3% and the interest is
