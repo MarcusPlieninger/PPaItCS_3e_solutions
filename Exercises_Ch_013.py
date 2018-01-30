@@ -163,7 +163,7 @@
 #     3. Design
 #        Ask user to input letters without spaces
 #        Get input from user as a string
-#        Formulate every possible combination of string
+#        Generate every possible combination of string
 #             For each list size of length 1 up to length of input string (e.g., 7)
 #
 #             [_] 7 possibilities                       (7)                         len(inputstr) - 0
@@ -173,11 +173,23 @@
 #             [_][_][_][_][_] 2520 possibilites         (7 * 6 * 5 * 4 * 3)
 #             [_][_][_][_][_][_] 7560 possibilities     (7 * 6 * 5 * 4 * 3 * 2) 
 #             [_][_][_][_][_][_][_] 7560 possibilities  (7 * 6 * 5 * 4 * 3 * 2 * 1)
-#    
 #
-#             for i in range(len(instring) + 1)
-#                 outstring = instring[0] 
-#                 
+#            StringIN = hatcife
+#            StringOUT = []
+#            iStringIN = 0
+#            for i in StringIN
+#
+#                      while iStringIN < (StringIN(len) - i)             # add first row possibilities
+#                          StringOUT.append.(StringIN[iStringIN(i)])
+#                          iStringIN = iStringIN + 1
+#
+#                
+#           if s == "":
+#                return [s]
+#               
+#           else:
+#                ans = []
+#                
 #             
 #
 #        Perform binary search within appropriate section of dictionary
