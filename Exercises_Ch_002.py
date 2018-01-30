@@ -112,62 +112,163 @@
 
 #  6. Fragments of code that produce or calculate new data values are called [B]
 #     a) identifiers            b) expressions
-#     c) productive clauses     d) assignemnt statements    
+#     c) productive clauses     d) assignemnt statements
+#     [Explanation: p.32: "The fragments of program code that produce or calculuate new data values are
+#     called expressions."]
 
 #  7. Which of the following is not a part of the IPO pattern? [B]
 #     a) input     b) program     c) process     d) output
+#     [Explanation: p.29: "...a standard pattern: Input, Process, Output (IPO)." As discussed in the
+#     previous chapter, a program is a specific set of instructions telling a computer precisely
+#     what to do step by step.]
 
 #  8. The template for <variable> in range(<expr>) describes [D]
 #     a) a general for loop     b) an assignment statement
 #     c) a flowchart            d) a counted loop        
+#     [Explanation: p.44: "This particular loop patter is called a counted loop.."]
 
 #  9. Which of the following is the most accurate model of assignment in Python? [A}
 #     a) sticky-note     b) variable-as-box     c) simultaneous     d) plastic-scale
+#     [Explanation: p.38: "The effect is like moving a sticky note from one object to another."]
 
 # 10. In Python, getting user input is done with a special expression called [D]
 #     a) for     b) read     c) simulataneous assignment     d) input
+#     [Explanation: p.39: "The purpose of an input statement is to get some information from the user of
+#     a program and store it in a variable. Some programming languages have a special statemetn to do
+#     this. In Python, input is accomplished using an assignment statement combined with a built-in
+#     function called input."]
 
 ## Discussion
 
 #  1. List and describe in your own words the six steps in the software development process.
+#     The software development process consists of six distinct steps. Only when one is complete should
+#     the next one be undertaken.
+#
+#     First, it is necessary to understand the problem as precisely as possible. This is the most
+#     important step, and it may require a lot of research and thinking. In fact, this step may take
+#     longer than all the other steps. But, without it, it is not possible to proceed to the other steps.
+#     In other words, this step requires what is commonly referred to as "analysis." But, really what we are
+#     talking about here is defining (or describing) the problem in a precise and unambiguous way. A true 
+#     definition/description of the problem is the key for the next step.
+#     -In other words, this step answers the question: What is the problem?
+#
+#     Second, only after you define (or describe) the problem can you start thinking about what could be done
+#     to solve it. In the context of programming, this means deciding (and describing) what precisely your program
+#     will do to solve the problem that you defined/described. Even more precisely, it means defining/describing
+#     what the inputs and outpus of the program will be. Their description should include how they relate to each other.
+#     A true definition/desription of the program (including the relation of inputs to outpus)
+#     is the key for the next step.
+#     -In other words, this step answers the question: What are the specifications of a solution to the problem?
+#
+#     Third, after describing the program in response to the problem description, it is necessary to describe the
+#     structure of the program, itself. This means designing the step-by-step process(es) (aka algorithm(s)) that will meet the
+#     specifications set forth above.
+#     -In other words, this step answers the question: How should the program be designed to meet its specifications?
+#
+#     Fourth, after deciding deciding on the appropriate design, it is time to implement the design by translating it
+#     into a programming language and put it into the computer so that the computer can follow the instructions.
+#     -In other words, this step answers the question: How should I translate the program design into code?
+#
+#     Fifth, after implementation is complete, it is necessary to verify whether or not the program works as expected,
+#     i.e. according to its specifications. This can be seen as a feedback loop whereby the program is tested for errors.
+#     If errors arise, these must be dealt with in a process called debuging.
+#     -In other words, this step answers the question: What will break the program?
+#
+#     Sixth, over time the program will have to be maintained in response to user needs. Thus, it will need to be further
+#     developed as user habits and expectations evolve.
+#     -In other words, this step calls for evolving the program, thus repeating steps one through five, where the problem
+#     is defined as a change in user needs.
 
 #  2. Write out the chas.py prgoram (Section 1.6) and identify the parts of the program as follows:
 #     a) Each identifier
 #     b) Each expression
 #     c) Put a comment at the end of each line indicating the type of statement on that line
 #        (e.g., output, assignment, input, loop, etc.)
+#
+# File: chaos.py
+# A simple program illustrating chaotic behavior.
+
+def main():                                                # function definition
+    print("This program illustrates a chaotic funciton.")  # output statement
+    x = eval(input("Enter a number between 0 and 1: "))    # assignment statement wrapped around input statement
+    for i in range(10):                                    # loop statement
+        x = 3.9 * x * (1 - x)                              # expression
+        print(x)                                           # output statement
+
+# Identifiers:
+#      chaos, main(), print(), x, eval, input, for, i, in, range()
+# Expressions:
+#      literals: "This program illustrates a chaotic funciton.", "Enter a number betwee 0 and 1", 10, 3.9
+#      more complex using operators: 3.9 * x * (1 - x)
+#      even more complex using loop statement: for i in range(10) - technically, this is a control construct, but it does produce
+#      new values so I am counting it as an expression
 
 #  3. Explain the relationship among the concepts: definite loop, for loop, and counted loop.
+#     A definite loop is the simplest kind of loop that will go around the loop body a definite number of times that is defined
+#     at the start of the loop.
+#     A counted loop is a particular loop pattern. It is a common way to use a definite loop. It will go around the loop body according
+#     to a defined count or number of times.
+#     A for loop is a statement in Python that is used to implement a counted loop and has the form
+#     for <var> in <sequence>:
+#         <body>
+#     [See pp. 43-6.]
 
 #  4. Show the output from the following fragments:
+#                                 Expected           |        Actual
 #     a) for i in range(5):
-#            print(i + i)
+#            print(i + i)         0
+#                                 2
+#                                 4
+#                                 6
+#                                 8
 #     b) for d in [3,1,4,1,5]:
-#            print(d, end=" ")
-#     c) for i in range(6):
-#            print(i, 2**i)
-#     d) for i in range(5):
-#            print(i, 2**1)
+#            print(d, end=" ")    3 1 4 1 5
+#
+#     c) for i in range(4):       
+#            print("Hello")       Hello
+#                                 Hello
+#                                 Hello
+#                                 Hello
+#
+#
+#
+#     d) for i in range(6):
+#            print(i, 2**i)       0, 1
+#                                 1, 2
+#                                 2, 4
+#                                 3, 8
+#                                 4, 16
+#                                 5, 32   
+#                            
 
 #  5. Why is it a good idea to first write out an algorithm in pseudocode rather than jumping
 #     immediately to Python code?
+#     It reduces the mental overhead of having to write the algorithm in a more complicated
+#     fashion, which can stifle the creative process (p.30).
+
 
 #  6. The Python print function supports other keyboard parameters besides end. One of these other
 #     keyboard parameters is sep. What do you think the sep parameter does? Hint: sep is short for
 #     separator. Test your idea either by trying it interactively or by consulting the Python
 #     documenation.
+#     The sep parameter separates   
+
 
 #  7. What do you think will happen if the following code is executed?
-#
-#     print("start")
-#     for i in range(0):
+#                            Expected          |   Actual
+#     print("start")         "Start"
+#     for i in range(0):     "end"
 #          print("Hello")
 #     print("end")
 #
 #     Look at teh flowchart for the for statement in this chapter to help you figure this out. Then test
 #     your prediction by tring out these lines in a program.
-
-
+#
+#     Explanation: p.45: "In general, range(<expr>) will produce a sequence of numbers that starts with 0
+#     and goesup to, but does not include the value of <expr>. If you think about it, the value of the
+#     expression determines the number of items in the resulting sequence." According to the flowchart on
+#     p.46, since there are no more items in the sequence defined by range(0), the loop never goes around
+#     the loop body.
 
 ### PROGRAMMING EXERCISES
 

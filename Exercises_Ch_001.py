@@ -116,24 +116,29 @@
 #     b) a complete computer command
 #     c) a precise description of a problem
 #     d) fetch-execute languages
+#     [Explanation: p.10: "In programming languages, a complete computer command is called a statement."]
 
 #  7. One difference between a compiler and an interpreter is [C]
 #     a) a compiler is a program
 #     b) a compiler is used to translate high-level language into machine language
 #     c) a compiler is no longer needed after a program is translated
 #     d) a compiler processes source code
+#     [Explanation: p.8: "The difference between interpreting and compiling is that compiling is a one-shot translation; once a
+#     program is compiled, it may be run over and over again without further need for the compiler or the source code."]
 
 #  8. By convention, the statements of a program are often placed in a function called [B]
 #     a) import
 #     b) main
 #     c) program
 #     d) IDLE
+#     [Explanation: p.14: ("Programs are often placed in a function called main.")
 
 #  9. Which of the following is not true of comments? [A]
 #     a) They make a program more efficient.
 #     b) They are intended for human readers.
 #     c) They are ignored by Python.
 #     d) In Python, they begin with a pound sign (#).
+#     [Explanation: p.16: "They...are ignored by Python."
 
 # 10. The items listed in the parentheses of a function are called [D]
 #     a) parentheticals
@@ -143,16 +148,37 @@
 #     *Note: I have a feeling that parameter refers more accurately to a *function definition* where as *argument* is used
 #     to refer to the value that is passed to the function when it is called, so that the argument replaces all instances
 #     of the parameter in the definition.
+#     [Explanation: p.11: "Commands can have changeable parts called parameters (also called arguments) that are placed within
+#     the parentheses." p.12: "...parentheses must be included after the function name whenever we want to execute a function."
 
 ## Discussion
 
 #  1. Compare and contrast the following pairs of concepts from the chapter:
 #     a) Hardware vs. Software
-#        Hardware is the body, software is the soul
+#        Hardware is the body, software is the soul. In other words, hardware refers to the actual physical machine, while
+#        software denotes the programs that tell the machine what to do. Software makes hardware useful for specific purposes
+#        (p.3). Software could not exist without hardware. Hardware would be useless without software. Software serves as the
+#        intermediary between man and machine. The process of creating software is a human one, as is the making of hardware.
+#        Both are a form of engineering.
 #     b) Algorithm vs. Program
-#        An algorithm is a recipe. A program is a set of instructions.
-#     c) Programming Lnaguage vs. Natural Language
-#        A programming language is pecise. A natural language is not.
+#        An algorithm is a recipe or a step-by-step process to achieve a specific result (p.4). A program is a more general term
+#        referring to a detailed, step-by-step sequence of instructions telling a computer exactly what to do (p.2). A program
+#        may contain one or more algorithms, but an alogorithm need not be a program. Both, however, share a common characteristic:
+#        they specify a process step by step. Algorithms can be turned into programs that determine what the physical machine can
+#        do and does do.
+#     c) Programming Language vs. Natural Language
+#        Any language is a kind of code for communicating meaning and thus has both syntax and semantics. Natural language is encoded
+#        in speech which in turn is encoded in writing and serves to communicate meaning among humans. Meaning among humans is something
+#        that is extraordinarly complex and is the result of our collective as well as individual experience and the store of this experience
+#        in what we commonly call culture. Therefore, the ambiguity and imprecision that is often a characteristic of natural language reflects
+#        the organic development of natural language as a means of expressing the vicissitudes of human experience. These qualities also serve
+#        the creation of human culture. Poetry can be created from the ambiguity and imprecision in language. Ambiguity and imprecision also
+#        make it possible to lie as well as miscommunicate, but they also reflect the mystery of the soul.
+#        A programming language also uses code to transmit meaning with precise semantics, in the form of notations with precise syntax. This
+#        precision is the consequence of the need to express computations precisely and unambiguously since computations themselves have these
+#        characteristics. Thus, programming languages cannot be said to have "evolved" in the same way that human languages have. The need to
+#        express computations precisely is necessary because the computer is a precise machine, and there for precise instructions are
+#        needed for the computer to follow them. This precision is a reflection of the mathematical underpinnings of the hardware.
 #     d) High-Level Language vs. Machine Language
 #        A high-level language is meant to be understood by humans. A machine language is understood by the computer.
 #     e) Interpreter vs. Compiler
