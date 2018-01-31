@@ -333,7 +333,7 @@ main()
 # by: Susan Computewell
 
 def main():
-    for i in range(5)
+    for i in range(5):
         celsius = eval(input("What is the Celsius temperature? "))
         fahrenheit = 9/5 * celsius + 32
         print("The temperature is", fahrenheit, "degrees Fahrenheit.")
@@ -386,6 +386,19 @@ main()
 #     to compute the total accumulation of your investment. The inputs to the program will be the amount to invest
 #     each year, the interest rate, and the number of years for the investment.
 
+#     inputs: principle
+#             APR
+#             fixed yearly investment
+#             number of years
+#     output: total accumulation
+
+#     start with principal
+#     for a given number of years, add fixed yearly investment to principal
+#     to the resulting sum, calculate APR and add this to the sum
+#     repeat for specified # of years
+#     then
+
+
 # futval.py
 #    A program to compute the future value of an investment
 #    with number of years determined by the user
@@ -400,11 +413,12 @@ def main():
     apr = eval(input("Enter the annual interest rate: "))
     yearlyinvestment = eval(input("Enter the fixed yearly amount to invest: "))
     years = eval(input("Enter the number of years for the investment: "))
-
+          
     for i in range(years):
-        
+          principal = principal + yearlyinvestment
+          principal = principal * (1 + apr)
 
-    print("The value in ", years ,"years is:", totalaccumulation, sep=" ")
+    print("The value in ", years ,"years is:", principal, sep=" ")
 
 main()
 
@@ -417,6 +431,36 @@ main()
 #     the user for the yearly rate (rate) and the number of times that the interest is compounded each year
 #     (periods). To compute the value in ten years, the program will loop 10 * periods times and accrue
 #     rate/period interest on each iteration.
+
+#     inputs: yearly rate
+#             periods (number of times that the interest is compounded each year)
+#             principal
+#             fixed yearly investment
+#             number of years
+#     output: total accumulation
+
+def main():
+    print("This program calculates the total future value")
+    print("of a multi-year investment with")
+    print("non-compounding interest and an additional")
+    print("investment of a certain fixed amount each year")
+    print("by describing the interest accrued in terms of")
+    print("a nominal rate and the number of compounding")
+    print("periods.")
+
+    principal = eval(input("Enter the initial principal: "))
+    interestrate = eval(input("Enter the interest rate: "))
+    periods = eval(input("Enter the number of compounding periods per year: "
+    yearlyinvestment = eval(input("Enter the fixed yearly amount to invest: "))
+    years = eval(input("Enter the number of years for the investment: "))
+          
+    for i in range(years):
+          principal = principal + yearlyinvestment
+          principal = principal * (1 + apr)
+
+    print("The value in ", years ,"years is:", principal, sep=" ")
+
+          
 
 #  9. Write a program that converts temperatures from Fahrenheit to Celsius.
 
