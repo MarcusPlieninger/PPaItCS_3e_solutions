@@ -369,7 +369,7 @@ def main():
      for i in range (10):
          x = 3.9 * x * (1 - x)
          y = 3.9 * x * (1 - x)
-         print("{0:>14.6f}{0:>13.6f}".format(x, y))
+         print("{0:>14.6f}{1:>13.6f}".format(x, y))
      
 main()
 
