@@ -348,12 +348,14 @@ main()
 #     from 0 degrees celsius to 100 degrees celsius
 
 def main():
-    print("Celisus Temperatures and Their Fahrenheit Equivalents")
-    print("C ", "F", sep="          ")
-    for i in range(10):
+    print("Celisus Temperatures and")
+    print("Their Fahrenheit Equivalents")
+    print("{0:<14}{1:<14}".format("C", "F"))
+    print("----------------------------")
+    for i in range(11):
         celsius = 10 * i
         fahrenheit = int(9/5 * celsius + 32)
-        print(celsius, fahrenheit, sep="          ")
+        print("{0:<14}{1:<14}".format(celsius, fahrenheit))
         
 main()
         # celsius = celsius + 10
@@ -441,27 +443,23 @@ main()
 
 def main():
     print("This program calculates the total future value")
-    print("of a multi-year investment with")
-    print("non-compounding interest and an additional")
-    print("investment of a certain fixed amount each year")
-    print("by describing the interest accrued in terms of")
-    print("a nominal rate and the number of compounding")
-    print("periods.")
+    print("of a multi-year investment with by describing")
+    print("the interest accrued in terms of a nominal rate")
+    print("and the number of compounding periods.")
 
     principal = eval(input("Enter the initial principal: "))
     interestrate = eval(input("Enter the interest rate: "))
-    periods = eval(input("Enter the number of compounding periods per year: "
-    yearlyinvestment = eval(input("Enter the fixed yearly amount to invest: "))
+    periods = eval(input("Enter the number of compounding periods per year: "))
     years = eval(input("Enter the number of years for the investment: "))
+
+    nominalrate = interestrate / periods
           
-    for i in range(years):
-          principal = principal + yearlyinvestment
-          principal = principal * (1 + apr)
+    for i in range(periods * years):
+          principal = principal * (1 + nominalrate)
 
     print("The value in ", years ,"years is:", principal, sep=" ")
 
           
-
 #  9. Write a program that converts temperatures from Fahrenheit to Celsius.
 
 # 10. Write a program that converts distances measured in kilometers to miles. One kilometer is approximately
