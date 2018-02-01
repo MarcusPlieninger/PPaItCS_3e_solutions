@@ -274,13 +274,16 @@
 #    program to get another value from the user:
 #    n = eval(input("How many numbers should I print? "))
 #    Then you will need to change the loop to use n instead of a specific number.
-     def main():
-         print("This program illustrates a chaotic function")
-         x = eval(input("Enter a number between 0 and 1: "))
-         n = eval(input("How many numbers should I print? "))
-         for i in range(n):
-             x = 3.9 * x * (1 - x)
-             print(x)
+#
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    n = eval(input("How many numbers should I print? "))
+    for i in range(n):
+        x = 3.9 * x * (1 - x)
+        print(x)
+        
+main()
          
 # 6. The calculation performed in the chaos program can be written in a number of ways that are algebraically equivalent. Write a version of
 #    the program for each of the following ways of doing the computation. Have your modified programs print out 100 iterations of the calculation
@@ -326,23 +329,49 @@
 #    1.8. (Note: You will probably not be able to get the columns to line up as nicely as those in the example. Chapter 5 discusses how to print
 #    numbers with a fixed number of decimal places).
 
-#    Basic version.
-     def main():
-         print("Ths program illustrates a chaotic function")
-         x, y = eval(input("Enter 2 numbers between 0 and 1 separated by a comma: "))
-         for i in range (10):
-             x = 3.9 * x * (1 - x)
-             y = 3.9 * x * (1 - x)
-             print(x, y)
+#    Basic version with bad formatting.
 
-
+def main():
+     print("Ths program illustrates a chaotic function")
+     x, y = eval(input("Enter 2 numbers between 0 and 1 separated by a comma: "))
+     print("input   ", x, "         ", y, " ")
+     print("---------------------------")
+     for i in range (10):
+         x = 3.9 * x * (1 - x)
+         y = 3.9 * x * (1 - x)
+         print(x, "   ", y)
+     
 main()
 
-#    More secure version.
+#    More secure version with bad formatting.
+def main():
+     print("Ths program illustrates a chaotic function")
+     x = float(input("Enter first numbers between 0 and 1: "))
+     y = float(input("Enter second number between 0 and 1: "))
+     print("input   ", x, "         ", y, " ")
+     print("---------------------------")
+     for i in range (10):
+         x = 3.9 * x * (1 - x)
+         y = 3.9 * x * (1 - x)
+         print(x, "   ", y)
+     
+main()
 
-#    More secure version with column headers.
+#    More secure version with good formatting.
 
-
+def main():
+     print("Ths program illustrates a chaotic function")
+     x = float(input("Enter first numbers between 0 and 1: "))
+     y = float(input("Enter second number between 0 and 1: "))
+     z = "input"
+     print("{2:<8}{0:<13.2f}{1:<6.2f}".format(x,y,z))
+     print("---------------------------")
+     for i in range (10):
+         x = 3.9 * x * (1 - x)
+         y = 3.9 * x * (1 - x)
+         print("{0:>14.6f}{0:>13.6f}".format(x, y))
+     
+main()
 
 
 
