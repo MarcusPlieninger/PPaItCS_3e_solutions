@@ -340,7 +340,7 @@ def main():
     print("The acronym is {0}".format(newacronym))
 
 main()
-        
+# need to test this        
 #
 
 #  5. Numerologists claim to be able to determine a person's character traits based on the "numeric value" of a name. The value
