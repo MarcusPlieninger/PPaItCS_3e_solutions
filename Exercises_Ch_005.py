@@ -357,22 +357,48 @@ main()
 #  User supplies string as input
 #  For each character in the input string, return where it occurs in the string, and add its index value to an accumulating sum
 #  Print sum
-
-def main():
-    lookup = "0ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    name = str(input("Please use letters only to enter your name 
-
+#
 # numerology.py
 # A program that determines the numeric value of a name where a = 1, b = 2, etc.
 
-def main()
+def main():
+    lookup = "0abcdefghijklmnopqrstuvwxyz"
+    inputname = str(input("Please use letters only to enter your name."))
+    formatinputname = inputname.lower()
+    for i in range(len(name)):
+        wordvalue = []
+        letter = formatinputname[i]
+        lettervalue = lookup.find(letter)
+        wordvalue = wordvalue + lettervalue
+    print("The numeric value of {0} is {1}.".format(inputname, wordvalue))
 
+main()
+#need to test
 
 #  6. Expand your soluation to the previous problem to allow the calcualtion of a complete name such as "John Marvin Zelle" or
 #     "John Jacob Jingleheimer Smith." The total value is just the sum of the numberic values of all the names.
 #
 #  Algorithm same as above, but need to use split method to make a list, then loop through each list element with above
 #  process for determining numeric value
+
+# numerology.py
+# A program that determines the numeric value of a name where a = 1, b = 2, etc.
+
+def main():
+    lookup = "0abcdefghijklmnopqrstuvwxyz"
+    inputnames = str(input("Please use letters only to enter your name."))
+    joininputnames = inputnames.join()
+    formatinputnames = formatinputnames.lowert()
+    for i in range(len(formatinputnames)):
+        totalvalue = []
+        letter = formatinputname[i]
+        lettervalue = lookup.find(letter)
+        wordvalue = wordvalue + lettervalue
+    print("The numeric value of {0} is {1}.".format(inputnames, totalvalue))
+
+main()
+#need to test
+
 
 #  7. A Caesar cipher is a simple substitution sipher based on the diea of shifting each letter of the plaintext message a fixed
 #     number (called the key) of positions in the alphabet. For example, if the key is 2, the word "Sourpuss" would be encoded as
@@ -398,12 +424,42 @@ def main()
 #  input = a sentence defined as a string
 #  output = the number of words defined as an int
 #
-# Prompt user for input.
-# Use split method to split string into list of words.
-# Print length of list.
+#  Prompt user for input.
+#  Use split method to split string into list of words.
+#  Print length of list.
 
+def main():
+    sentence = str(input("Please enter your sentence here: "))
+    sentenceintowords = sentence.split()
+    numberofwords = len(sentenceintowords)
+    
+    print("The number of words in", end = "/n")
+    print(sentence, end = "/n")
+    print("is", end = "/n")
+    print(numberofwords, ".")
+
+main()
+#need to test
+                
 # 10. Write a program that calculates the average word length in a sentence entered by the user.
-# Same as above, but also count lenght of each words, add up all the numbers, divide by number of words.
+#     Same as above, but also count lenght of each words, add up all the numbers, divide by number of words.
+
+def main():
+    sentence = str(input("Please enter your sentence here: "))
+    sentenceIntoWords = sentence.split()
+    
+    for i in (len(sentenceIntoWords)):
+        wordLengthTotal = []
+        wordLength = len(sentenceIntoWords(i))
+        wordLengthTotal = wordLengthTotal + wordLength
+    averageWordLength = wordLengthTotal / len(sentenceIntoWords)
+
+    print("The average word length in the sentence", end = "/n")
+    print(sentence, end = "/n")
+    print("is", end = "/n")
+    print(numberofwords, ".")
+# need to test
+
  
 # 11. Write an improved version of the chaos.py program from Chapter 1 that allows a user to input two initial values and the number of
 #     of iterations, and then prints a nicely formatted table showing how the values change over time. For example, if the starting
@@ -431,18 +487,18 @@ def main():
      print("---------------------------")
      for i in range (10):
          x = 3.9 * x * (1 - x)
-         y = 3.9 * y * (1 - x)
+         y = 3.9 * y * (1 - y)
          print("{0:>14.6f}{1:>13.6f}".format(x, y))
      
 main()
 
-# 12. Write an imroved version fo the futval.py program from Chapter 2.
+# 12. Write an improved version of the futval.py program from Chapter 2.
 #     Your program will prompt the user for the amoutn of the investment, the annualized interest rate, and the number of years of the
-#     investment. The program will then output a nicely formatted table taht tracks the value of the investment year by year. Your
+#     investment. The program will then output a nicely formatted table that tracks the value of the investment year by year. Your
 #     output might look something like this:
 #
 #     Year     Value
-#     ________________
+#     ----------------
 #       0     $2000.00
 #       1     $2200.00
 #       2     $2420.00
@@ -451,6 +507,30 @@ main()
 #       5     $3221.02
 #       6     $3542.12
 #       7     $3897.43
+
+# futval.py
+#    A program to compute the value of an investment
+#    carried 10 years into the future
+
+def main():
+    print("This program calculates the future value")
+    print("of a 10-year investment.")
+
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: ", end="/n"))
+
+    print("{0:<9}{1:<7}".format(Year, Value) #not right
+    
+    for i in range(10):
+        principal = principal * (1 + apr)
+        print("{0:>6}{$1:>8.2f}".format(i, principal)) #not right
+
+    print("The value in 10 years is:", principal)
+
+main()
+
+
+
 
 # 13. Redo any of the previous programming exercises to make hem batch-oriented (using text files for input and output).
 
