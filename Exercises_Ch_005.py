@@ -347,9 +347,32 @@ main()
 #     of a name is determined by summing up the values of the letters of the name where "a" is 1, "b" is 2, "c" is 3, up to "z"
 #     being 26. For example, the name "Zelle" would have the value 26 + 5 + 12 + 12 + 5 = 60 (which happens to be a very
 #     auspicious number, by the way). Write a program that calculates the numeric value of a single name provided as input.
+#
+#  input: a last name defined as a string supplied by the suer
+#  output: a numeric value defined as an int that is the sum of values assigned to the individual strings
+#  User inputs a string, and the program outputs the sum of the values of the invidual strings where the values are
+#  determined as follows, a = 1, b = 2, etc.
+
+#  Create a sequence of characters as lookup table starting with an empty space at index 0 to align index with value of each letter
+#  User supplies string as input
+#  For each character in the input string, return where it occurs in the string, and add its index value to an accumulating sum
+#  Print sum
+
+def main():
+    lookup = "0ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    name = str(input("Please use letters only to enter your name 
+
+# numerology.py
+# A program that determines the numeric value of a name where a = 1, b = 2, etc.
+
+def main()
+
 
 #  6. Expand your soluation to the previous problem to allow the calcualtion of a complete name such as "John Marvin Zelle" or
 #     "John Jacob Jingleheimer Smith." The total value is just the sum of the numberic values of all the names.
+#
+#  Algorithm same as above, but need to use split method to make a list, then loop through each list element with above
+#  process for determining numeric value
 
 #  7. A Caesar cipher is a simple substitution sipher based on the diea of shifting each letter of the plaintext message a fixed
 #     number (called the key) of positions in the alphabet. For example, if the key is 2, the word "Sourpuss" would be encoded as
@@ -370,8 +393,17 @@ main()
 #     Note to self: modular.
 
 #  9. Write a program that counts the number of words in a sentence entered by the user.
+#
+#  Given a sentence, the program will count the number of words.
+#  input = a sentence defined as a string
+#  output = the number of words defined as an int
+#
+# Prompt user for input.
+# Use split method to split string into list of words.
+# Print length of list.
 
-# 10. WRite a program that calculates the average word length in a sentence entered by the user.
+# 10. Write a program that calculates the average word length in a sentence entered by the user.
+# Same as above, but also count lenght of each words, add up all the numbers, divide by number of words.
  
 # 11. Write an improved version of the chaos.py program from Chapter 1 that allows a user to input two initial values and the number of
 #     of iterations, and then prints a nicely formatted table showing how the values change over time. For example, if the starting
@@ -389,6 +421,20 @@ main()
 #       8    0.540418     0.147447
 #       9    0.968629     0.490255
 #      10    0.118509     0.974630
+
+def main():
+     print("Ths program illustrates a chaotic function")
+     x = float(input("Enter first numbers between 0 and 1: "))
+     y = float(input("Enter second number between 0 and 1: "))
+     z = "input"
+     print("{2:<8}{0:<13.2f}{1:<6.2f}".format(x,y,z))
+     print("---------------------------")
+     for i in range (10):
+         x = 3.9 * x * (1 - x)
+         y = 3.9 * y * (1 - x)
+         print("{0:>14.6f}{1:>13.6f}".format(x, y))
+     
+main()
 
 # 12. Write an imroved version fo the futval.py program from Chapter 2.
 #     Your program will prompt the user for the amoutn of the investment, the annualized interest rate, and the number of years of the
