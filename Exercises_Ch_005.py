@@ -249,17 +249,99 @@
 
 #  1. The example code files for Chapter 5 include a date conversion program, dateconvert2.py. This program could be
 #     simplified with string formatting. Modify the program to use the string format method for its output.
+#
+# dateconvert2.py
+#     Converts day month and year numbers into two date formats
+
+def main():
+    # get the day month and year as numbers
+    day = int(input("Enter the day number: "))
+    month = int(input("Enter the month number: "))
+    year = int(input("Enter the year: "))
+
+    date1 = str(month)+"/"+str(day)+"/"+str(year)
+
+    months = ["January", "February", "March", "April", 
+              "May", "June", "July", "August", 
+              "September", "October", "November", "December"]
+    monthStr = months[month-1]
+    date2 = monthStr+" " + str(day) + ", " + str(year)
+
+    print("The date is {0} or {1}.".format(date1, date2))
+
+main()
+
 
 #  2. A certain CS professor gives 5-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F. Write a
 #     program that accepts a quiz score as an input and prints out the corresponding grade.
+#
+#     Input: quiz score defined as a a number from 1 to 5
+#     Output: a letter grade defined as a string: A, B, C, D, F
+#
+#     Create a squence of grades as a string, where index/position corresponds to letter grade 
+#     For a number supplied by user, convert to int and get the index, print the appropriate grade
+#
+# gradeconverter.py
+#     Converts a quizscore from 1-5 to the corresponding grade
 
-#  3. A certain CS provessor gives 100-point exams that are graded on the cale 90-100:A, 80-89:B, 70-79:C, 60-69:D, <60:F.
-#     Write a program that accepts an exam xcore as input and prints out the corresponding grade.
+def main():
+    # Create list of possible letter grades
+    lettergradescale = "FFDCBA"
+    # Prompt user for quiz grade
+    quizgrade = int(input("Please enter the quiz grade on a scale from 0 to 5: "))
+    lettergrade = lettergradescale[quizgrade]
+    print("Your quiz grade of {0} corrsesponds to the letter grade of {1}.".format(quizgrade, lettergrade))
+
+#  3. A certain CS professor gives 100-point exams that are graded on the scale 90-100:A, 80-89:B, 70-79:C, 60-69:D, <60:F.
+#     Write a program that accepts an exam score as input and prints out the corresponding grade.
+#
+#     Input: an exam score defined as an int from 0 t0 100
+#     Output: a letter grade defined as one of 5 possible strings: A, B, C, D, F where 90-100:A, 80-89:B, 70-79:C, 60-69:D, <60:F
+#
+#     Define int ranges for each letter grade
+#     For a number  grade entered by user, use if elif statements to determine letter grade
+#
+#     Note: Another possible solution, but much less efficient, would be to create a sequence as a string or list where each
+#     list grade would be a list item indexed at its coresponding value, so in the indeces from 90 to 100, there would be an "A"
+#
+#     Since I don't feel like typing a lot, I will use the more efficient solution even if decision structures have not been
+#     covered yet.
+#
+#     
+
 
 #  4. An acronym is a word formed by taking the first letters of the words in a phrase and making a word from them. For
 #     example, RAM is an acronym for "random access memory." Write a program that allows the user to type in a phrase and
 #     then outputs the acronym for that phrase. Note: The acronym should be all uppercase, even if the words in the phrase
 #     are not capitalized.
+#
+#     Input: A string of words demarcated by spaces
+#     Output: A string that is an acronym of the first letter of each word in the string
+#
+#     Get input from user as a string
+#     Use split method to split string into its component words as demarcated by a space (" ")
+#     Get first letter of each word using loop accumulator
+#     Join first letter of each word into a new string
+#     Capitalize new string
+#     Print string for user
+#
+#
+# acronym.py
+#     A program that forms an acronym out of words
+
+def main():
+    userstring = str(input("Please enter the words, separated by a space, that will be used for the acronym: "))
+    words = userstring.split()
+    for i in range(len(words)):
+        newacronym = []
+        word = words[i]
+        firstletter = word(0)
+        newacronym.append(firstletter)
+    print("The acronym is {0}".format(newacronym))
+
+main()
+        
+#
 
 #  5. Numerologists claim to be able to determine a person's character traits based on the "numeric value" of a name. The value
 #     of a name is determined by summing up the values of the letters of the name where "a" is 1, "b" is 2, "c" is 3, up to "z"
