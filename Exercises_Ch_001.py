@@ -192,33 +192,63 @@
 #     that you are talking to someone who is conceptually able to do the task, but has never actually done it before. For example,
 #     you might be telling a young child.
 #
-#    # Acuire peanut butter and bread
-#    Buy peanut butter and bread at store
+#    # Acuire peanut butter, jelly and bread
+#    buy peanut butter, jelly and bread at store
+#    bring items home
 #
 #    # Store peanut butter and bread
-#    Before putting peanut butter in fridge
-#        Open peanut butter by twisting the cap in a counter-clockwise drection
-#        Stir peanut butter with a spoon
-#            Make sure not to spill any oil or peanut butter outsde of the jar
-#            Stir until the contents of the jar are of a uniform consistency
-#    Put jar of peanut butter in fridge
-#    Put bread in fridge
+#    before putting peanut butter in fridge
+#        open peanut butter by twisting the cap in a counter-clockwise drection
+#        stir peanut butter with a spoon
+#            make sure not to spill any oil or peanut butter outsde of the jar
+#            stir until the contents of the jar are of a uniform consistency
+#    put jar of peanut butter in fridge
+#    put jelly in fridge
+#    put bread in fridge
 #
-#    # Get jar of peanut better
-#    Open fridge door
-#    Take out jar of of peanut butter
+#    # Defining items we will use
+#    jar of peanut butter
+#    jar of jelly
+#    loaf of bread
+#    plate
+#    knife
+#    table
+#
+#    # Defining function to get items from fridge and place on table
+#    def fridgetotable(item):
+#        open fridge door
+#        take item out of fridge
+#        put item on flat surface (i.e., table
+#
+#    # Getting items from fridge
+#    fridgetotable(jar of peaut better)
+#    fridgetotable(jar of jelly)
+#    fridgetotable(loaf of bread)
+#
+#    # Defing function to set table
+#    def settable(item)
+#        if item == plate
+#            get a plate and put it on the table
+#        elif item == knife
+#            open drawer containing utensil
+#            get a knife
+#            put knife on table
+#
+#    # Definin function to open jar
 #
 #    # Open peanut butter jar
-#        put jar on flat surface (i.e., table)
-#        hold jar firmly with left hand 
-#        twist jar cap with right hand in counter clockwise direction until jar cap is completely separated from jar
-#        if jar cap does not open run jar cap under hot water
-#            go to kitchen sink
-#            turn knob for hot water
-#            wait until water is hot
-#            place jar cap under hot water
-#            let hot water run over jar cap for 5 minutes
-#            twist jar cap with right hand in counter-clockwise direction until jar cap is completely separated from jar
+#    hold jar firmly with left hand 
+#    twist jar cap with right hand in counter clockwise direction until jar cap is completely separated from jar
+#    if jar cap does not open run jar cap under hot water
+#       go to kitchen sink
+#       turn knob for hot water
+#       wait until water is hot
+#       place jar cap under hot water
+#       let hot water run over jar cap for 5 minutes
+#       twist jar cap with right hand in counter-clockwise direction until jar cap is completely separated from jar
+#
+#   # Open jelly jar
+
 
 #
 
