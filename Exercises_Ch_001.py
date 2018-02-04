@@ -234,32 +234,116 @@
 #            get a knife
 #            put knife on table
 #
-#    # Definin function to open jar
-#
-#    # Open peanut butter jar
-#    hold jar firmly with left hand 
-#    twist jar cap with right hand in counter clockwise direction until jar cap is completely separated from jar
-#    if jar cap does not open run jar cap under hot water
-#       go to kitchen sink
-#       turn knob for hot water
-#       wait until water is hot
-#       place jar cap under hot water
-#       let hot water run over jar cap for 5 minutes
-#       twist jar cap with right hand in counter-clockwise direction until jar cap is completely separated from jar
+#    # Define function to open jar
+#    def openjar(jar)
+#        hold jar firmly with left hand 
+#        twist jar cap with right hand in counter clockwise direction until jar cap is completely separated from jar
+#        if jar cap does not open run jar cap under hot water
+#        go to kitchen sink
+#        turn knob for hot water
+#        wait until water is hot
+#        place jar cap under hot water
+#        let hot water run over jar cap for 5 minutes
+#        twist jar cap with right hand in counter-clockwise direction until jar cap is completely separated from jar
 #
 #   # Open jelly jar
-
-
+#   openjar(jelly jar)
+#   open jary(peanut butter jar)
+#
+#    # Define spread function
 #
 
 
 #  4. As you will learn in a later chapter, many of the numbers stored in a computer are not exact values, but rather close
-#     approximations. For example, the value 0.1 might be sotred as 0.10000000000000000555. Usually, such small differences are not
+#     approximations. For example, the value 0.1 might be stored as 0.10000000000000000555. Usually, such small differences are not
 #     a problem; however, given what you have learned about chaotic behavior in Chapter 1, you should realize the need for caution in
 #     certain situations. Can you think of exmaples where this might be a problem? Explain.
+#
+#     Any situation where you are using large numbers, small differences matter greatly:
+#
+#     (1) For example, a savings account with millions of dollars will accrue much more
+#         interest if values are stored as close approximations.
+#
+#     (2) Another example would be in scientifc computing, say when measuring extremely
+#         small quantities, say on the atomic/subatomic level.
+#
+#     (3) Another example would be measuring on a large scale, say the distance between planets or solar systems. An approximation of
+#         the actual measurement could impact the accuracy of any calculation.
+
 
 #  5. Trace through the chaos program from Section 1.6 by hand using 0.15 as the input value. Show the sequence of output that results.
+##
+def main():
+         print("Ths program illustrates a chaotic function")
+         x = eval(input("Enter a number between 0 and 1: "))
+         for i in range(10):
+             x = 3.9 * x * (1 - x)
+             print(x)
+##
+##main()
+##
+##x = .15
+##                                                      # output sequence
+##for 0 in range(10):                                   # 0.49725                 
+##    x = 3.9 * .15 * (1 - .15)                         # 0.97497050625
+##    print(0.49725)                                    # 0.09517177095122
+##                                                      # 0.3358450093644
+##for 1 in range(10):                                   # 0.86990724229278
+##    x = 3.9 * 0.49725 * (1 - 0.49725)                 # 0.44135766518747
+##    print(0.97497050625)                              # 0.96158819861419
+##                                                      # 0.14405170611043
+##for 2 in range(10):                                   # 0.48087316710069
+##    x = 3.9 * 0.97497050625 * (1 - 0.97497050625)     # 0.97357324062664
+##    print(0.09517177095122)
+##    
+##for 3 in range(10):                    
+##    x = 3.9 * 0.09517177095122 * (1 - 0.09517177095122)
+##    print(0.3358450093644)
+##
+##for 4 in range(10):                    
+##    x = 3.9 * 0.3358450093644 * (1 - 0.3358450093644)
+##    print(0.86990724229278)
+##
+##for 5 in range(10):                    
+##    x = 3.9 * 0.86990724229278 * (1 - 0.86990724229278)
+##    print(0.44135766518747)
+##
+##for 6 in range(10):                    
+##    x = 3.9 * 0.44135766518747 * (1 - 0.44135766518747)
+##    print(0.96158819861419)
+##
+##for 7 in range(10):                    
+##    x = 3.9 * 0.96158819861419 * (1 - 0.96158819861419)
+##    print(0.14405170611043)
+##
+##for 8 in range(10):                    
+##    x = 3.9 * .0.14405170611043 * (1 - .0.14405170611043)
+##    print(0.48087316710069)
+##
+##for 9 in range(10):                    
+##    x = 3.9 * 0.48087316710069 * (1 - 0.48087316710069)
+##    print(0.97357324062664)
 
+# Here is the output sequence as a result of the trace
+# next to the output sequence as a result of the program.
+
+# Trace output sequence       Program output sequence
+# 0.49725                     0.49724999999999997 
+# 0.97497050625               0.97497050625
+# 0.09517177095122            0.09517177095121285
+# 0.3358450093644             0.3358450093643686
+# 0.86990724229278            0.8699072422927216
+# 0.44135766518747            0.4413576651876355
+# 0.96158819861419            0.9615881986142427
+# 0.14405170611043            0.14405170611022783
+# 0.48087316710069            0.48087316710014555
+# 0.97357324062664            0.9735732406265619
+
+
+# What explains the differences?
+
+# I used a calculator app for the trace. The calculator produced accurate values, the program produced approximations as result
+# of how these values are stored (i.e., stored as float data type).
 
 ### PROGRAMMING EXERCISES
 
@@ -496,6 +580,17 @@ main()
 ##    0.883617356516682384          0.0                           0.22620378739532176482 
 
 #    Explain the results of this experiment. Hint: See discussion question number 4, above.
+#
+#    The results for 3.9 * x (x - x * x)  are easy to explain. Since x is a number between 0 and 1, the square of x will always
+#    be smaller than x. In fact, x will approach closer and closer to 0 with each iteration. Eventually, the result exceeds
+#    the range of a float, and then 0.0 is returned.
+#
+#    The results for 3.9 * x * (1 - x) and 3.9 * x - 3.9 * x * x are similar up to a point, but not exactly similar. This should be intuitively
+#    apparent because, while the results would be exactly the same for integers, for the float data type it is not. This is because the result of each
+#    operation will return only an approximation. Over time, the small disparities will snowball into larger ones.
+#
+#    Algebraic equivalence does not guarantee equivalent results for a floating point data type. Because all results are approximations, changing
+#    the operations to something algebraicaly equivalent will produce unequivalent results. The intermediate values are inexact and will be stored differently.
 
 # 7. (Advanced) Modify the chaos program so that it accepts two inputs and then prints a table with two columns similar to the one shown in Section
 #    1.8. (Note: You will probably not be able to get the columns to line up as nicely as those in the example. Chapter 5 discusses how to print
