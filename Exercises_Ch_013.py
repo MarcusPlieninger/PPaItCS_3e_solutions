@@ -117,7 +117,28 @@
 
 ### PROGRAMMING EXERCISES
 
-#  1.
+#  1. Modify the recursive Fibonacci program in this chapter so that it prints tracing information. Specifically,
+#     have the function print a message when it is called and when it returns. For example, the output should contain
+#     lines like these:
+#
+#     Computing fib(4)
+#     ...
+#     Leaving fib(4) returning 3
+#
+#     Use your modified version of fib to compute fib(10) and count how many times fib(3) is computed in the process.
+
+def recFib(n):
+    # returns nth Fibonacci number
+    # Note: this algorithm is exceedingly inefficient!
+    print("Computing fib(", n, ")")
+    if n < 3:
+        return 1
+    else:
+        print("Leaving fib(",n,") returning(",n-1,")") # is this right?
+        return recFib(n-1) + recFib(n-2)
+        
+    
+
 
 #  2.
 
