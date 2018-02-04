@@ -307,9 +307,19 @@ def main():
 #     Since I don't feel like typing a lot, I will use the more efficient solution even if decision structures have not been
 #     covered yet.
 #
-#     
+#     Then again, I will stick with the book's plan and write up the less efficient version.
+#
+# examgrade.py
+#     Converts an exam grade to a letter grade
 
+def main():
+    lettergradescale = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDDDDDDDDDDCCCCCCCCCCBBBBBBBBBBAAAAAAAAAAA"
+    examgrade = int(input("Please enter the quiz grade on a scale from 0 to 100: "))
+    lettergrade = lettergradescale[examgrade]
+    print("Your grade of {0} corresponds to the letter grade of {1}.".format(examgrade, lettergrade))
 
+main()
+    
 #  4. An acronym is a word formed by taking the first letters of the words in a phrase and making a word from them. For
 #     example, RAM is an acronym for "random access memory." Write a program that allows the user to type in a phrase and
 #     then outputs the acronym for that phrase. Note: The acronym should be all uppercase, even if the words in the phrase
@@ -529,21 +539,19 @@ def main():
 
 main()
 
-
-
-
-# 13. Redo any of the previous programming exercises to make hem batch-oriented (using text files for input and output).
+# 13. Redo any of the previous programming exercises to make them batch-oriented (using text files for input and output).
 
 # 14. Word Count. A common utility on Unix/Linux systems is a small program called "wc." This program analyzes a file to determine the
 #     number of lines, words and characters contained therein. Write your own verison of wc. The program should accept a file name as
 #     input and then print three numbers showing the count of lines, words, and characters in the file.
 
-# 15. Write a program to plot a horizontal bary chart of studnet exam scores. Your program should get input from a file. The first line
-#     of the file contains the count of the number of students in the file, and eah subsequent line contains a student's last name
+# 15. Write a program to plot a horizontal bar chart of student exam scores. Your program should get input from a file. The first line
+#     of the file contains the count of the number of students in the file, and each subsequent line contains a student's last name
 #     followed by a score in the range 0-100. Your program should draw a horizontal rectangle for each student where the length of the
 #     bar represents the student's score. The bars should all line up on their left-hand edges.
+#
 #     Hint: Use the number of students to determine the size of the window and its coordinates. [Note to self: point of control.]
-#     Bonus: lable the bars at the left with the students' names.
+#     Bonus: label the bars at the left with the students' names.
 
 # 16. Write a program to draw a quiz score histogram. Your program should read data from a file. Each line of the file contains a number
 #     in the range 0-10. Your program must count the number of occurences of each score and then draw a vertical bar chart with a bar for
