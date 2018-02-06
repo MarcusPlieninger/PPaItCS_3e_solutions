@@ -243,6 +243,7 @@ def main():                                                # function definition
 
 #  5. Why is it a good idea to first write out an algorithm in pseudocode rather than jumping
 #     immediately to Python code?
+#
 #     It reduces the mental overhead of having to write the algorithm in a more complicated
 #     fashion, which can stifle the creative process (p.30).
 
@@ -251,7 +252,8 @@ def main():                                                # function definition
 #     keyboard parameters is sep. What do you think the sep parameter does? Hint: sep is short for
 #     separator. Test your idea either by trying it interactively or by consulting the Python
 #     documenation.
-#     The sep parameter separates   
+#
+#     The sep parameter separates specifies the separator between multiple values when printing. 
 
 
 #  7. What do you think will happen if the following code is executed?
@@ -301,11 +303,15 @@ main()
 # by: Susan Computewell
 
 def main():
+    
     print("This program coverts a temperature in Celsius to a temperature in Fahrenheit.")
+    
     celsius = eval(input("What is the Celsius temperature? "))
     fahrenheit = 9/5 * celsius + 32
+    
     print("The temperature is", fahrenheit, "degrees Fahrenheit.")
-    input("Press the <Enter> key to quit.") # Why does this work?
+    input("Press the <Enter> key to quit.")
+    
 main()
 
 
@@ -316,6 +322,7 @@ main()
 #   Illustrates use of multiple input
 
 def main():
+    
     print("This program computes the average of two exam scores.")
 
     score1, score2, score3 = eval(input("Enter two scores separated by a comma: "))
@@ -333,6 +340,7 @@ main()
 # by: Susan Computewell
 
 def main():
+    
     for i in range(5):
         celsius = eval(input("What is the Celsius temperature? "))
         fahrenheit = 9/5 * celsius + 32
@@ -462,15 +470,73 @@ def main():
           
 #  9. Write a program that converts temperatures from Fahrenheit to Celsius.
 
+# convert2.py
+#     A program to convert Fahrenheit temps to Celsius
+# by: Susan Computewell
+
+def main():
+    
+    print("This program converts a temperature in Fahrenheit to a temperature in Celsius.")
+    
+    fahrenheit = eval(input("What is the Fahrenheit temperature? "))
+    celsius = 9/5 * celsius + 32
+    fahrenhet = (fahrenheit - 32) * 5/9
+    
+    print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+    input("Press the <Enter> key to quit.") # Why does this work?
+main()
+
 # 10. Write a program that converts distances measured in kilometers to miles. One kilometer is approximately
 #     0.62 miles.
+
+# convert3.py
+#     A program to convert distances measured in kilometers to miles
+# by: Susan Computewell
+
+def main():
+    
+    print("This program converts distances measured in kilometers to miles.")
+    
+    kilometers = eval(input("What is the distance in kilometers?"))
+    miles = kilometers * .62
+    
+    print("The distance is", kilometers, "kilometers.")
+    input("Press the <Enter> key to quit.")
+          
+main()
 
 # 11. Write a program to perform a unit conversion of your own choosing. Make sure that the program prints
 #     an introduction that explains what it is.
 
+#     gal US = L x 0.264172052
+
+# convert3.py
+#     A program to convert liters to gallons
+
+def main():
+
+    print("This program converts liters to gallons.")
+
+    gallons = eval(input("How many gallons?")
+    liters = gallons * .264172052
+
+    print("The fluid volume in liters is", liters, "liters.")
+    input("Press the <Enter> key to quit.")
+
 # 12. Write an interactive Python calculator program. The program should allow the user to type a
 #     mathematical expression, and then print the value of the expression. Include a loop so that the
 #     user can perform many calculations (say, up to 100). Note: To quit early, the user can make the
-#     program crash by typing a bad expression or simply clsoing the window that the calculator program
-#     is running in. You'll learn better ways of terminating interactive programs in later chapters. 
+#     program crash by typing a bad expression or simply closing the window that the calculator program
+#     is running in. You'll learn better ways of terminating interactive programs in later chapters.
+
+def main():
+
+    print("This program is an interactive calculator. Enter your calculations below.")
+
+    for i in range(100):
+        expression = eval(input(""))
+        print(expression)
+
+main()
+                   
 
