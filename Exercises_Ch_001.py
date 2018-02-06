@@ -192,6 +192,8 @@
 #     that you are talking to someone who is conceptually able to do the task, but has never actually done it before. For example,
 #     you might be telling a young child.
 #
+#    Note: I'm writing this in pseudocode using a functional style.
+#
 #    # Acuire peanut butter, jelly and bread
 #    buy peanut butter, jelly and bread at store
 #    bring items home
@@ -230,7 +232,7 @@
 #        if item == plate
 #            get a plate and put it on the table
 #        elif item == knife
-#            open drawer containing utensil
+#            open drawer containing utensils
 #            get a knife
 #            put knife on table
 #
@@ -246,12 +248,15 @@
 #        let hot water run over jar cap for 5 minutes
 #        twist jar cap with right hand in counter-clockwise direction until jar cap is completely separated from jar
 #
-#   # Open jelly jar
+#   # Open jars
 #   openjar(jelly jar)
-#   open jary(peanut butter jar)
+#   openjar(peanut butter jar)
 #
-#    # Define spread function
+#   # Define spread function
+#   
+#   # Apply spread function
 #
+
 
 
 #  4. As you will learn in a later chapter, many of the numbers stored in a computer are not exact values, but rather close
@@ -274,7 +279,7 @@
 #  5. Trace through the chaos program from Section 1.6 by hand using 0.15 as the input value. Show the sequence of output that results.
 ##
 def main():
-         print("Ths program illustrates a chaotic function")
+         print("This program illustrates a chaotic function")
          x = eval(input("Enter a number between 0 and 1: "))
          for i in range(10):
              x = 3.9 * x * (1 - x)
@@ -401,7 +406,7 @@ def main():
 
 #    Observation: In general, when the multiplier is 2, the logistic function appears to behave in a "less random" fashion insofar as it
 #    returns values that have less variance. In fact, even when the input values are close together, the output values are very similar.
-#    So, it is less "choatic" in its output both for one given input as well as across differnt inputs., especially if they are close together.
+#    So, it is less "choatic" in its output both for one given input as well as across differnt inputs, especially if they are close together.
 
 
 # 4. Modify the chaos program so that it prints out 20 values instead of 10.
@@ -409,7 +414,7 @@ def main():
      # File: chaos.py
      #A simple program illustrating chaotic behavior.
      def main():
-         print("Ths program illustrates a chaotic function")
+         print("This program illustrates a chaotic function")
          x = eval(input("Enter a number between 0 and 1: "))
          for i in range(20):
              x = 3.9 * x * (1 - x)

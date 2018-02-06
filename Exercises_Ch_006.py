@@ -4,7 +4,6 @@
 
 ### REVIEW QUESTIONS
 
-
 ## True/False
 
 #  1. Programmers rarely define their own functions. FALSE
@@ -59,11 +58,155 @@
 
 ## Multiple Choice
 
-#  1.
+#  1.  The part of a program that uses a function is called the [B]
+#      a) user  b) caller  c) callee  d) statement
+#      [Explanation:
+
+#  2.  A Python function definition begins with [A]
+#      a) def  b) define  c) function  d) defun
+
+#  3.  A function can send output back tot the program with a(n) [A]
+#      a) return  b) print  c) assignment  d) SASE
+
+#  4.  Formal and actual parameters are matched up by [B]
+#      a) name  b) position  c) ID  d) interests
+
+#  5.  Which of the following is not a step in the function-calling process? [D]
+#      a) The calling program suspends.
+#      b) The formal parameters are assigned the value of the actual parameters.
+#      c) The body of the function executes.
+#      d) Control returns to the point just before the function was called.
+
+#  6. In Python, actual parameters are passed to functions [A]
+#     a) by value  b) by reference  c) at random  d) by networking
+
+#  7. Which of the following is not a reason to use functions? [D]
+#     a) to reduce code duplication
+#     b) to make a program more modular
+#     c) to make a program more self-documenting
+#     d) to demosntrate intellectual superiority
+
+#  8. If a function returns a value, it should generally be called from [A]
+#     a) an expression  b) a different program
+#     c) main           d) a cell phone
+
+#  9. A function with no return statment returns [D]
+#     a) nothing  b) its parameters  c) its variables  d) None
+
+# 10. A function can modify the value of an actual parameter only if it's [A]
+#     a) mutable  b) a list  c) passed by reference  d) a variable
 
 ## Discussion
 
-#  1.
+#  1. In your own words, describe the two motivations for defining functions in your programs.
+
+#  2. We have been thinking about computer programs as sequences of instructions where the computer methodically
+#     executes on instruction and then moves on to the next one. Do programs that contain functions fit this model?
+#     Explain your answer.
+
+#  3. Parameters are an important concept in defining functions.
+#     a) What is the purpose of parameters?
+#     b) What is the difference between a formal parameter and an actual parameter?
+#     c) In what ways are parameters similar to and different from ordinary variables?
+
+#  4. Functions can be thought of as miniature (sub)programs inside other programs. Like any other programs, we can
+#     think of functions as having input and output to communicate with the main program.
+#     a) How does a program provide "input" to one of its functions?
+#     b) How does a function provide "output" to the program?
+
+#  5. Consider this very simple function:
+#     def cube(x):
+#         answer = x * x * x
+#         return answer
+#     a) What does this function do?
+#     b) Show how a program could use this function to print the value of y^3, assuming y is a variable.
+#     c) Here is a fragment of a program that uses this function:
+#        answer  = 4
+#        result = cube(3)
+#        print(answer, result)
+#        The output from this fragment is 4 27. Explain why the output is not 27 27, even though cube seems to change
+#        the value of answer to 27.
 
 
 ### PROGRAMMING EXERCISES
+
+#  1. Write a program to print the lyrics of the song "Old MacDonald." Your program should print the lyrics for five
+#     different animals, similar to the example verse below.
+#
+#     Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
+#     And on that farm he had a cow, Ee-igh, Ee-igh, Oh!
+#     With a moo, moo here and a moo, moo there.
+#     Here a moo, there a moo, everywhere a moo, moo.
+#     Old MacDonald had a farm, Ee-igh, Eeigh, Oh!
+
+def refrain():
+    print("Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!")
+
+def animal(kind, noise):
+    refrain()
+    print("And on that farm he had a " kind "Ee-igh, Ee-igh, Oh!")
+    print("With a " noise", " noise " here and a " noise", " noise " there.")
+    print("Here a " noise ", there a " noise ", everywhere a " noise ".")
+    refrain()
+
+def main:
+    animal("pig", "oink")
+    print()
+    animal("duck", "quack")
+    print()
+    animal("sheep", "baah")
+    print()
+    animal("cow", "moo")
+    print()
+    animal("dog", "woof")
+
+#  2. Write a program to print the lyrics for ten verses of "The Ants Go Marching." A couple of sample versus are given below.
+#     You may choose your own activity for the "little one" in each verse, but be sure to choose something that makes the rhyme
+#     work (or almost work).
+
+#  3. Write definitions for these functions:
+
+#  4.
+
+#  5.
+
+#  6.
+
+#  7.
+
+#  8.
+
+#  9.
+
+# 10.
+
+# 11.
+
+# 12.
+
+# 13.
+
+# 14.
+
+# 15.
+
+# 16.
+
+# 17.
+
+# 9.
+
+#10.
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
