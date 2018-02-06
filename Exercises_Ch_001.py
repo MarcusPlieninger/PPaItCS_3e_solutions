@@ -187,6 +187,11 @@
 #        Syntax is form. Symantics is meaning.
 
 #  2. List and explain in your own words the role of each of the five basic functional units of a computer depicted in Figure 1.1.
+#
+#     The central processing unit or CPU is the brain of the computer. It performs all the basic operations. Main memory stores programs and data,
+#     but this memory is not permanent. The information is lost when the computer is turned off. Secondary memory provides more
+#     permanent storage. Humans interact with computers via input and output devices. Input devices allow the computer to receive information
+#     about the world. After it is processed by the computer, output devices take the new information and return it to the world for humans to absorb.
 
 #  3. Write a detailed algorithm for making a peanut butter and jelly sandwich (or some other everyday activity). You should assume
 #     that you are talking to someone who is conceptually able to do the task, but has never actually done it before. For example,
@@ -219,8 +224,9 @@
 #    # Defining function to get items from fridge and place on table
 #    def fridgetotable(item):
 #        open fridge door
-#        take item out of fridge
-#        put item on flat surface (i.e., table
+#        take item out of fridge with your hand
+#        put item you are holding in your hand gently on flat surface (i.e., table)
+#        close the fridge door
 #
 #    # Getting items from fridge
 #    fridgetotable(jar of peaut better)
@@ -238,6 +244,7 @@
 #
 #    # Define function to open jar
 #    def openjar(jar)
+#        grip the jar
 #        hold jar firmly with left hand 
 #        twist jar cap with right hand in counter clockwise direction until jar cap is completely separated from jar
 #        if jar cap does not open run jar cap under hot water
@@ -252,10 +259,56 @@
 #   openjar(jelly jar)
 #   openjar(peanut butter jar)
 #
+#   # Prepare bread
+#   preparebread(bread)
+#       pick up plastic bag on table
+#       open plastic bag containing bread
+#       take out 2 slices of bread that are not the end slices
+#       put the 2 slices on the plate, side by side
+#       close the plasic bag
+#       put the plastic bag containing the bread back in the fridge
+#
+#   pick up knife and hold knife on the non-cutting end
+
 #   # Define spread function
+#   spread(jar, jar contents)      
+#       while holding knife dip the cutting end into the jar
+#       using knife scoop out some jar contents
+#       hold knife so that side that has scooped jar contents is facing up
+#       bring the knife an inch away from the ceneter of the bread
+#       rotate knife so that the jar contents side is now facing down
+#       touch the jar contents side of the knife to the slice of bread at its center
+#       push the jar contents gently around on the bread until it is evenly spread across the whole slice
+#       repeat these steps until you have the desired consitency on your bread
 #   
 #   # Apply spread function
+#   spread(peanut butter jar, peanut butter)
+#   spread(jelly jar, jelly)
 #
+#   # Close the sandwich
+#   take second slice of bread in your hand
+#   place it in top of the slice with the peanut butter and jelly so that the corners of both slices align
+#   press gently on the top slice
+#
+#   # Clean up jars
+#   cleanup(jar)
+#       take jar cap for jar in your hand
+#       put it on top of jar
+#       while holding the jar cap on top of the jar twist it clockwise until it is tight and you can no longer twist
+#       open the fridge
+#       return the jar to its original place in the fridge
+#       close the fridge
+#
+#   cleanup(peanut butter)
+#   cleanup(jelly)
+#
+#   # Clean knife
+#   clean(knife)
+#       pick up knife by its handle
+#       get a piece of paper towel
+#       wipe off any jelly or peanut butter using the paper towel
+#       throw out paper towel
+#       put knife in dishwasher
 
 
 
