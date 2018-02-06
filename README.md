@@ -53,7 +53,7 @@ Legend:
 [Download link](https://fbeedle.com/our-books/23-python-programming-an-introduction-to-computer-science-3rd-ed-9781590282755.html) for end-of-chapter solutions and code.
 
 ## Other Links
-- [PEP8](https://www.python.org/dev/peps/pep-0008/) - style guide- 
+- [PEP8](https://www.python.org/dev/peps/pep-0008/) - style guide
 - [Python 3.6.4 documentation](https://docs.python.org/3.6/) - very informative, includes tutorial and FAQ's
 
 
