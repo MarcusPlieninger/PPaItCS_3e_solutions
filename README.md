@@ -18,8 +18,8 @@ This book has 13 chapters, with exercises at the end of each chapter.
 
 |:closed_book:||:book:|:thinking:|:bulb:|:keycap_ten:|:pencil2:|:abcd:|:pencil2:|:speech_balloon:|:pencil2:|:computer:|:pencil2:||:date:|:hourglass:|:heavy_plus_sign:|
 |-------------|-|------|----------|------|------------|---------|------|---------|----------------|----------|---------|---------|-|------|-----------|-----------------|
-| 1|<sub>Computers and Programs</sub>|:construction:|<sub>"logistic"</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
-| 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:construction:||:construction:||:construction:|
+| 1|<sub>Computers and Programs</sub>|:construction:|<sub>"logistic"</sub>||:heavy_check_mark:||:heavy_check_mark:||:heavy_check_mark:||:heavy_check_mark:|
+| 2|<sub>Writing Simple Programs</sub>|:construction:|||:heavy_check_mark:||:heavy_check_mark:||:heavy_check_mark:||:heavy_check_mark:|
 | 3|<sub>Computing with Numbers</sub>|:construction:|<sub>Float</sub>|<sub>bit Int</sub>|:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 4|<sub>Objects and Graphics</sub>|:construction:|<sub>methods, functions, operations</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
 | 5|<sub>Sequences: Strings, Lists, and Files</sub>|:construction:|<sub>ASCII, Unicode, UTF-8, private key, public key, read, write</sub>||:heavy_check_mark:||:construction:||:construction:||:construction:|
