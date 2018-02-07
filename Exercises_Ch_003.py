@@ -57,23 +57,24 @@
 
 #  1. Which of these is not a built-in Python data type? [C]
 #     a) int     b) float     c) rational     d) string
-#     [Explanation: 
+#     [Explanation: Rational numbers are not a built-in Python data type. Floating point numbers are
+#     used to represent numbers with fractional values, i.e. rational numbers.]
 
 #  2. Which of the following is not a built-in operation? [D]
 #     a) +     b) %     c) abs()     d) sqrt()
-#     [Explnaation: sqrt() "lives" in the math library. See p.
+#     [Explanation: p.67: sqrt() "lives" in the math library. See p.
 
 #  3. In order to use functions in the math library, a program must include [D]
 #     a) a comment     b) a loop     c) an operator     d) an import statement
-#     [Explanation
+#     [Explanation: An import statement is necessary for any library.]
 
 #  4. The value of 4! is [B]
 #     a) 9     b) 24     c) 41     d) 129
-#     [Explanation: 4 * 3 * 2 * 1 = 24
+#     [Explanation: 4 * 3 * 2 * 1 = 24]
 
 #  5. The most appropriate data type for storing the value of pi is [B]
 #     a) int     b) float     c) irrational     d) string
-#     [Explanation:
+#     [Explanation: Pi has an infinitely long mantissa. Therefore, the float data type would be appropriate.]
 
 #  6. The number of distinct values that can be represented using 5 bits is [C]
 #     a) 5     b) 10     c) 32     d) 50
