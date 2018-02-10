@@ -67,7 +67,7 @@
 #       Done
 #
 # PROGRAMMING EXERCISES
-#
+
 # c07ex1.py
 #    overtime pay
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
 
 def main():
-    print("Quiz grade \n")
+    print("Quiz grade calculator \n")
     score = int(input("Enter quiz score: "))
     if score == 5:
         grade = "A"
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 
 
 def main():
-    print("Exam grade \n")
+    print("Exam grade calculator \n")
     score = int(input("Enter exam score: "))
     if score >= 90:
         grade = A
@@ -136,7 +136,7 @@ if __name__ == '__main__':
 #    class standing
 
 def main():
-    print("Class standing \n")
+    print("Class standing calculator\n")
     credits = int(input("Enter number of credits: "))
     if credits >= 26:
         standing = "senior"
@@ -191,9 +191,12 @@ def main():
 if __name__ == '__main__':
     main()
 
+# c07ex7.py
+#    babysitting bill
 
-              
-        
+def main():
+    print("Babysitting bill calculator \n")
+    
 
 
 
