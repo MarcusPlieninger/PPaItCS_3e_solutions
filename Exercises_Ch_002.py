@@ -480,9 +480,8 @@ def main():
     
     fahrenheit = eval(input("What is the Fahrenheit temperature? "))
     celsius = 9/5 * celsius + 32
-    fahrenhet = (fahrenheit - 32) * 5/9
     
-    print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+    print("The temperature is", celsius, "degrees celsius.")
     input("Press the <Enter> key to quit.") # Why does this work?
 main()
 
