@@ -500,7 +500,7 @@ def main():
     kilometers = eval(input("What is the distance in kilometers?"))
     miles = kilometers * .62
     
-    print("The distance is", kilometers, "kilometers.")
+    print("The distance is", miles, "miles.")
     input("Press the <Enter> key to quit.")
           
 main()
